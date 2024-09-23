@@ -79,7 +79,8 @@ html {
 
 .img-form {
   z-index: 0;
-  max-height: 600px;
+  height: 600px;
+  width: auto;
 
   position: relative;
   left: 2%;
@@ -88,11 +89,12 @@ html {
 
 .img-icon {
   z-index: 1;
-  max-height: 150px;
+  height: 150px;
+  width: auto;
   transform: rotate(-90deg);
 
   position: relative;
-  left: 1%;
+  left: -0.5%;
   /*bottom: 36%;  TOP*/
   top: 420px;
 }
@@ -240,68 +242,4 @@ html {
 
 .form .close {
   display: none;
-}
-
-@media screen and (max-width: 960px) {
-
-  /* CLASSES GERAIS */
-  .flex-content {
-    flex-direction: column;
-  }
-
-  .content {
-    margin-top: 1%;
-    height: 550px;
-    width: 350px;
-  }
-
-  /* CABEÇALHO */
-  .menu-desktop {
-    display: none;
-  }
-
-  /* IMG + TXT */
-  .text-img {
-    height: 250px;
-    width: 250px;
-    top: 30px;
-    left: 15%;
-  }
-
-  .img-form {
-    max-height: 360px;
-    left: -1.5%;
-    bottom: 88%;
-  }
-
-  .img-icon {
-    max-height: 100px;
-    left: -30.7%;
-    top: 164%;
-  }
-
-  .title {
-    font-size: 45px;
-    top: 34%;
-    left: 27%;
-  }
-
-  .subtitle {
-    font-size: 65px;
-    text-shadow: -2px -2px 2px #0d2829;
-    top: 15%;
-    left: 19%;
-  }
-
-  /* FORM + BTN */
-  .form-container {
-    margin-top: 10%;
-    width: 300px;
-    padding: 10px;
-    left: 7.5%;
-  }
-
-  .form-container .heading {
-    display: none;
-  }
 }

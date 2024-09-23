@@ -1,0 +1,83 @@
+@media screen and (max-width: 960px) {
+
+    /* CABEÇALHO */
+    header img{
+        max-width: 100px;
+        margin-left: 25px;
+    }
+    
+    header .btn-agendar{
+        display: none;
+        margin-right: 40px;
+    }
+    
+    header ul li a{
+        display: none; }
+
+    /* CLASSES GERAIS */
+
+    .banner{
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        background-position: 53%;
+    }
+
+    .texto-inicial{
+        height: 200px;
+        width: auto;
+        margin-left: 2%;
+        position: relative;
+        top: 70px;
+        left: 35px;
+    }
+
+    /* IMG + TXT */
+    .texto-inicial h1 {
+        color: #f7d2a9;
+        font-size: 40px;
+        font-family: Espiritu Cond;
+
+        animation: opacidade-moviment 1s ease-out alternate;
+        
+        left: 40px;
+        top: 0;
+    }
+
+    .texto-inicial h1 span {
+        color: #fff;
+    }
+
+    .texto-inicial .btn-agendar-agora {
+        animation: aparecer-btn 1s ease-out alternate;
+        
+        left: 40px;
+        top: 0px;
+    }
+
+    @keyframes opacidade-moviment{
+        0% {
+            top: 20px;
+            opacity: 0%;
+        }
+    
+        100% {
+            top: 0px;
+            opacity: 100%;
+        }
+    }
+    
+    @keyframes aparecer-btn{
+        0% {
+        top: 20px;
+        opacity: 0%;
+    }
+
+        100% {
+        top: 0px;
+        opacity: 100%;
+    }
+}
+}
