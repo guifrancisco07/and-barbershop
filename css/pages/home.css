@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+    background-color: #0d2829;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url(../imgs/background/background-home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.banner h1 {
+    color: #f7d2a9;
+    font-size: 5em;
+    font-family: Espiritu Cond;
+
+    animation: opacidade-moviment 1s ease-out alternate;
+
+    position: relative;
+    left: 12%;
+    bottom: 35%;
+}
+
+.banner h1 span {
+    color: #fff;
+}
+
+.banner .btn-agendar-agora {
+    background-color: #b66f43;
+    color: #f7d2a9;
+    font-family: Espiritu;
+
+    border: 0;
+    height: 30px;
+    width: 120%;
+    border-radius: 8px;
+
+    animation: aparecer-btn 1s ease-out alternate;
+
+    position: relative;
+    right: 335px;
+    top: -290px;
+}
+
+.banner .btn-agendar-agora:hover {
+    background-color: #d0804e;
+    color: #ffffff;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    /* CABEÇALHO */
+    header img{
+        max-width: 100px;
+        margin-left: 25px;
+    }
+    
+    header .btn-agendar{
+        display: none;
+        margin-right: 40px;
+    }
+    
+    header ul li a{
+        display: none; }
+
+    /* CLASSES GERAIS */
+
+    .banner{
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    /* IMG + TXT */
+    .banner h1 {
+        color: #f7d2a9;
+        font-size: 40px;
+        font-family: Espiritu Cond;
+
+        animation: opacidade-moviment 1s ease-out alternate;
+        left: 40px;
+        top: 0;
+    }
+
+    .banner h1 span {
+        color: #fff;
+    }
+
+    .banner .btn-agendar-agora {
+        animation: aparecer-btn 1s ease-out alternate;
+    
+        position: relative;
+        left: 40px;
+        top: 0px;
+    }
+
+    @keyframes opacidade-moviment{
+        0% {
+            top: 20px;
+            opacity: 0%;
+        }
+    
+        100% {
+            top: 0px;
+            opacity: 100%;
+        }
+    }
+    
+    @keyframes aparecer-btn{
+        0% {
+        top: 20px;
+        opacity: 0%;
+    }
+
+        100% {
+        top: 0px;
+        opacity: 100%;
+    }
+}
+}

@@ -1,0 +1,77 @@
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .4s;
+}
+
+header.rolagem{
+    z-index: 3;
+    background-color: #091c1d;
+    padding: 15px 4%;
+}
+
+header.rolagem a{
+    color: white;
+}
+
+header i{
+    font-size: 30px;
+    color: #fff;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Espiritu;
+
+    padding: 2px 14px;
+    border-radius: 10px;
+    background-color: #b66f43;
+}
+
+header ul li a:hover{
+    color: #fff;
+    background-color: #d0804e;
+}
+
+.btn-agendar button{
+    width: 120px;
+    height: 35px;
+    border: 0;
+    border-radius: 10px;
+
+    background-color: #d0804e;
+    color: #0d2829;
+    font-family: Espiritu;
+}
+
+.btn-agendar button:hover{
+    background-color: #ee9259;
+    color: #fff;
+    
+    cursor: pointer;
+    transition: .2s;
+}

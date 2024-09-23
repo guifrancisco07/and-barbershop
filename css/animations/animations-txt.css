@@ -1,0 +1,33 @@
+@keyframes opacidade-moviment{
+    0% {
+        bottom: 30%;
+        opacity: 0%;
+    }
+
+    100% {
+        bottom: 35%;
+        opacity: 100%;
+    }
+}
+
+@keyframes aparecer-btn{
+    0% {
+        top: -240px;
+        opacity: 0%;
+    }
+
+    100% {
+        top: -290px;
+        opacity: 100%;
+    }
+}
+
+@keyframes aparecer-form{
+    0% {
+        top: 15px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}

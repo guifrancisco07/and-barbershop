@@ -1,0 +1,25 @@
+.img1{
+    max-width: 40px;
+}
+
+.img2{
+    max-width: 40px;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #091c1d;
+    padding-top: 28px;
+    padding-bottom: 26px;
+}
+
+.main-footer .action{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.main-footer img{
+    margin: 0 10px;
+}

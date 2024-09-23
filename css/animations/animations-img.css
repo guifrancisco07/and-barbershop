@@ -1,0 +1,65 @@
+@keyframes oscilando {
+    0% {
+        transform: rotate(-89deg);
+    }
+
+    100% {
+        transform: rotate(-96deg);
+    }
+}
+
+@keyframes oscilando2 {
+    0% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes oscilando-txt-img {
+    0% {
+        top: -1%;
+    }
+
+    100% {
+        top: 1%;
+    }
+}
+
+@keyframes aparecer-img-txt1{
+    0% {
+        top: 32px;
+        opacity: 0%;
+    }
+
+    100% {
+        top: 22px;
+        opacity: 100%;
+    }
+}
+
+@keyframes aparecer-img-txt2{
+    0% {
+        top: 100px;
+        opacity: 0%;
+    }
+
+    100% {
+        top: 85px;
+        opacity: 100%;
+    }
+}
+
+@keyframes aparecer-img-txt3{
+    0% {
+        top: 100px;
+        opacity: 0%;
+    }
+
+    100% {
+        top: 70px;
+        opacity: 100%;
+    }
+}
