@@ -21,28 +21,28 @@ header{
 header.rolagem{
     z-index: 3;
     background-color: #091c1d;
-    padding: 15px 4%;
+    padding: 10px 4%;
 }
 
 header.rolagem a{
     color: white;
 }
 
-header i{
+header nav i{
     font-size: 30px;
     color: #fff;
 }
 
-header ul{
+header nav ul{
     list-style-type: none;
 }
 
-header ul li{
+header nav ul li{
     display: inline-block;
     margin: 0 40px;
 }
 
-header ul li a{
+header nav ul li a{
     color: #fff;
     text-decoration: none;
     font-family: Espiritu;
@@ -52,7 +52,7 @@ header ul li a{
     background-color: #b66f43;
 }
 
-header ul li a:hover{
+header nav ul li a:hover{
     color: #fff;
     background-color: #d0804e;
 }

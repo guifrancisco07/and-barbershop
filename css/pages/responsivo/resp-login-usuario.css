@@ -1,70 +1,80 @@
 @media screen and (max-width: 960px) {
 
-    /* CLASSES GERAIS */
-    .flex-content {
-      flex-direction: column;
-    }
-  
-    .content {
-      margin-top: 1%;
-      height: 550px;
-      width: 350px;
-    }
-  
-    .fundo-section{
-      background-position: 53%;
-    }
-
-    /* CABEÇALHO */
-    header{
-      display: none;
-    }
-  
-    /* IMG + TXT */
-    .text-img {
-      height: 250px;
-      width: 250px;
-      top: 30px;
-      left: 15%;
-      animation: none;
-    }
-  
-    .img-form {
-      height: 350px;
-      width: auto;
-      left: -1.5%;
-      bottom: 70%;
-    }
-  
-    .img-icon {
-      height: auto;
-      width: 70px;
-      left: 39%;
-      top: 245px;
-    }
-  
-    .title {
-      font-size: 45px;
-      top: 38%;
-      left: 25%;
-    }
-  
-    .subtitle {
-      font-size: 65px;
-      text-shadow: -2px -2px 2px #0d2829;
-      top: 35%;
-      left: 17%;
-    }
-  
-    /* FORM + BTN */
-    .form-container {
-      margin-top: -15%;
-      width: 300px;
-      padding: 10px;
-      left: 7.5%;
-    }
-  
-    .form-container .heading {
-      display: none;
-    }
+  /* CLASSES GERAIS */
+  .flex-content {
+    flex-direction: column;
   }
+
+  .content {
+    margin-top: 1%;
+    height: 550px;
+    width: 350px;
+  }
+
+  .fundo-section {
+    background-position: 53%;
+  }
+
+  /* CABEÇALHO */
+  header img {
+    max-width: 100px;
+    margin-left: 25px;
+  }
+
+  header .btn-agendar {
+    display: none;
+    margin-right: 40px;
+  }
+
+  header ul li a {
+    display: none;
+  }
+
+  /* IMG + TXT */
+  .text-img {
+    height: 250px;
+    width: 250px;
+    top: 30px;
+    left: 15%;
+    animation: none;
+  }
+
+  .img-form {
+    height: 350px;
+    width: auto;
+    left: -1.5%;
+    bottom: 70%;
+  }
+
+  .img-icon {
+    height: auto;
+    width: 70px;
+    left: 39%;
+    top: 245px;
+  }
+
+  .title {
+    font-size: 45px;
+    top: 38%;
+    left: 25%;
+  }
+
+  .subtitle {
+    font-size: 65px;
+    text-shadow: -2px -2px 2px #0d2829;
+    top: 35%;
+    left: 17%;
+  }
+
+  /* FORM + BTN */
+  .form-container {
+    margin-top: -15%;
+    width: 300px;
+    padding: 10px;
+    left: 7.5%;
+  }
+
+  .form-container .heading {
+    display: none;
+  }
+}
