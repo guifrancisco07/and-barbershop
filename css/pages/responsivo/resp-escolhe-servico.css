@@ -5,7 +5,8 @@
     flex-direction: column;
   }
 
-  .content {
+  .content {    
+    margin-bottom: 15%;
     background-color: rgba(9, 28, 29, 50%);
     backdrop-filter: blur(2px);
     margin-top: 25%;
@@ -20,27 +21,28 @@
   }
 
   .fundo-section {
+    height: 100vh;
     background-position: 53%;
   }
 
   /* CABEÇALHO */
-  header{
-    padding: 30px 4%;
-  }
-
   header img {
     max-width: 100px;
     margin-left: 25px;
-  }
+}
 
-  header .btn-agendar {
+header{
+    display: none;
+}
+
+header .btn-agendar {
     display: none;
     margin-right: 40px;
-  }
+}
 
-  header ul li a {
+header ul li a {
     display: none;
-  }
+}
 
   /* IMG + TXT */
   .text-img {
