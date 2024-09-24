@@ -37,4 +37,8 @@
     .texto-inicial .btn-agendar-agora {
         left: 40px;
     }
+
+    .main-footer{
+        display: none;
+      }
 }

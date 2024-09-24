@@ -1,0 +1,79 @@
+@media screen and (max-width: 960px) {
+
+    /* CLASSES GERAIS */
+    .flex-content {
+        flex-direction: column;
+    }
+
+    .content {
+        margin-bottom: 15%;
+        height: 570px;
+        width: 350px;
+    }
+
+    .fundo-section {
+        height: 120vh;
+        background-position: 53%;
+    }
+
+    /* CABEÇALHO */
+    header img {
+        max-width: 100px;
+        margin-left: 25px;
+    }
+
+    header{
+        display: none;
+    }
+
+    header .btn-agendar {
+        display: none;
+        margin-right: 40px;
+    }
+
+    header ul li a {
+        display: none;
+    }
+
+    /* IMG + TXT */
+    .text-img {
+        height: 200px;
+        width: 300px;
+        top: 30px;
+        left: 7.5%;
+        animation: none;
+    }
+
+    .img-icon {
+        max-height: 280px;
+        left: 20%;
+        bottom: 65%;
+    }
+
+    .title {
+        font-size: 35px;
+        top: 9%;
+        left: 28%;
+    }
+
+    .subtitle {
+        font-size: 65px;
+        top: 2%;
+        left: 19%;
+    }
+
+    /* FORM + BTN */
+    .form-container {
+        width: 300px;
+        padding: 10px;
+        left: 7.5%;
+    }
+
+    .form-container .heading {
+        display: none;
+    }
+
+    .main-footer {
+        display: none;
+    }
+}

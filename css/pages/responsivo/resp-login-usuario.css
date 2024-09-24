@@ -6,29 +6,34 @@
   }
 
   .content {
-    margin-top: 1%;
+    margin-bottom: 25%;
     height: 550px;
     width: 350px;
   }
 
   .fundo-section {
+    height: 120vh;
     background-position: 53%;
-  }
+}
 
-  /* CABEÇALHO */
-  header img {
+/* CABEÇALHO */
+header img {
     max-width: 100px;
     margin-left: 25px;
-  }
+}
 
-  header .btn-agendar {
+header{
+    display: none;
+}
+
+header .btn-agendar {
     display: none;
     margin-right: 40px;
-  }
+}
 
-  header ul li a {
+header ul li a {
     display: none;
-  }
+}
 
   /* IMG + TXT */
   .text-img {
@@ -75,6 +80,10 @@
   }
 
   .form-container .heading {
+    display: none;
+  }
+
+  .main-footer{
     display: none;
   }
 }
