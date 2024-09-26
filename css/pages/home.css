@@ -6,6 +6,9 @@
 
 html {
     min-height: 100vh;
+}
+
+body{
     background-color: #0d2829;
 }
 

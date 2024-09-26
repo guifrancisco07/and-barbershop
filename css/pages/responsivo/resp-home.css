@@ -1,21 +1,6 @@
 @media screen and (max-width: 960px) {
 
-    /* CABEÇALHO */
-    header img{
-        max-width: 100px;
-        margin-left: 25px;
-    }
-    
-    header .btn-agendar{
-        display: none;
-        margin-right: 40px;
-    }
-    
-    header ul li a{
-        display: none; }
-
     /* CLASSES GERAIS */
-
     .banner{
         height: 100vh;
         display: flex;
@@ -26,11 +11,13 @@
     }
 
     .texto-inicial{
+        z-index: 1;
         left: 35px;
     }
 
     /* IMG + TXT */
     .texto-inicial h1 {
+        z-index: 8888;
         font-size: 40px;
     }
 
@@ -38,7 +25,7 @@
         left: 40px;
     }
 
-    .main-footer{
+    .main-footer{ /*verificar o uso do footer*/
         display: none;
       }
 }

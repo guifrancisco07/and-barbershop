@@ -22,19 +22,6 @@
         margin-left: 25px;
     }
 
-    header{
-        display: none;
-    }
-
-    header .btn-agendar {
-        display: none;
-        margin-right: 40px;
-    }
-
-    header ul li a {
-        display: none;
-    }
-
     /* IMG + TXT */
     .text-img {
         height: 250px;
