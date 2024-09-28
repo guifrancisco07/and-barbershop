@@ -1,0 +1,29 @@
+.topo-do-site{
+    background-image: url(/css/imgs/background/background-home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.topo-do-site .flex{
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.topo-do-site .txt-topo-site{
+    position: relative;
+    top: 20px;
+    animation: opacidade-moviment 1s ease-out alternate;
+}
+
+.topo-do-site .txt-topo-site h1{
+    color: #f7d2a9;
+    font-size: 5em;
+    font-family: Espiritu Cond;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #fff;
+}

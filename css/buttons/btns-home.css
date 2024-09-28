@@ -1,0 +1,19 @@
+.btn-agendar-agora {
+    background-color: #b66f43;
+    color: #f7d2a9;
+    font-family: Espiritu;
+
+    top: 0px;
+    border: 0;
+    height: 30px;
+    width: 130px;
+    border-radius: 8px;
+}
+
+.btn-agendar-agora:hover {
+    background-color: #d0804e;
+    color: #ffffff;
+
+    cursor: pointer;
+    transition: .2s;
+}

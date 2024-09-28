@@ -1,0 +1,28 @@
+.form .btn {
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: Espiritu;
+  cursor: pointer;
+
+  width: 40%;
+  padding: 5px;
+  position: relative;
+
+  border-radius: 10px;
+  border: solid 1px #a3643c;
+  border-bottom: solid 3px #774a2e;
+  background: linear-gradient(135deg, #d0804e, #8d5735);
+
+  transition: all 0.2s ease;
+  box-shadow: 0px 2px 3px #000d3848, inset 0px 4px 5px #aa683f,
+    inset 0px -4px 5px #8d5735;
+}
+
+.form .btn:active {
+  font-size: 14.5px;
+  box-shadow: inset 0px 4px 5px #8f5937, inset 0px -4px 5px #774a2e;
+  transform: scale(1.05);
+}

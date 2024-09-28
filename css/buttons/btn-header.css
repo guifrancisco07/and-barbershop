@@ -1,0 +1,21 @@
+header .btn-agendar-header button{
+    width: 120px;
+    height: 35px;
+    border: 0;
+    border-radius: 10px;
+    
+    transition: .2s;
+
+    background-color: #d0804e;
+    color: #0d2829;
+    font-family: Espiritu;
+    cursor: pointer;
+}
+
+header .btn-agendar-header button:hover{
+    box-shadow: 0px 0px 8px #b66f43;
+    background-color: #ee9259;
+    color: #fff;
+
+    transform: scale(1.05);
+}

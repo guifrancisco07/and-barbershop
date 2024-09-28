@@ -9,16 +9,9 @@ header.rolagem{
 header.rolagem a{
     color: white;
 }
-
 /* FIM DA ANIMAÇÃO JS */
 
 /* ESTILIZAÇÃO DO CABEÇALHO */
-
-.interface{
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
 header{
     width: 100%;
     padding: 40px 4%;
@@ -66,28 +59,6 @@ header nav ul li{
     padding: 0 40px;
 }
 
-header .btn-agendar button{
-    width: 120px;
-    height: 35px;
-    border: 0;
-    border-radius: 10px;
-    
-    transition: .2s;
-
-    background-color: #d0804e;
-    color: #0d2829;
-    font-family: Espiritu;
-    cursor: pointer;
-}
-
-header .btn-agendar button:hover{
-    box-shadow: 0px 0px 8px #b66f43;
-    background-color: #ee9259;
-    color: #fff;
-
-    transform: scale(1.05);
-}
-
 .logo img{
     height: auto;
     width: 120px;
@@ -102,7 +73,7 @@ header .btn-agendar button:hover{
         margin-left: 25px;
     }
 
-    .menu-desktop a, .btn-agendar{
+    .menu-desktop a, .btn-agendar-header{
         display: none;
     }
 

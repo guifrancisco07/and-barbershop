@@ -1,0 +1,25 @@
+/* CLASSES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*cor do background - fundos*/
+    --main-bg-color: #0d2829;
+}
+
+html {
+    min-height: 100vh;
+    background-color: var(--main-bg-color);
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}

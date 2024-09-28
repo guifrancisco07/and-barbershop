@@ -1,31 +1,43 @@
 @media screen and (max-width: 960px) {
 
     /* CLASSES GERAIS */
-    .banner{
+    section.topo-do-site .flex{
         height: 100vh;
-        display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         justify-content: center;
-        background-position: 53%;
-    }
-
-    .texto-inicial{
-        z-index: 1;
-        left: 35px;
+        gap: 20px;
     }
 
     /* IMG + TXT */
-    .texto-inicial h1 {
-        z-index: 8888;
-        font-size: 40px;
+    .topo-do-site .txt-topo-site{
+        position: relative;
+        top: 20px;
+        left: 30px;
+        animation: opacidade-moviment 1s ease-out alternate;
+    }
+    
+    .topo-do-site .txt-topo-site h1{
+        color: #f7d2a9;
+        font-size: 2.3em;
+        font-family: Espiritu Cond;
+    }
+    
+    .topo-do-site .txt-topo-site h1 span{
+        color: #fff;
     }
 
-    .texto-inicial .btn-agendar-agora {
-        left: 40px;
+    .btn-agendar-agora {
+        background-color: #b66f43;
+        color: #f7d2a9;
+        font-family: Espiritu;
+        font-size: 12px;
+    
+        top: 0px;
+        border: 0;
+        height: 25px;
+        width: 120px;
+        border-radius: 8px;
     }
 
-    .main-footer{ /*verificar o uso do footer*/
-        display: none;
-      }
 }
