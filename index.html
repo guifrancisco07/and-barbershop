@@ -12,15 +12,19 @@
     <link rel="stylesheet" href="./css/animations/animations-txt.css">
     <link rel="stylesheet" href="./css/fonts/font-imports.css">
     <link rel="stylesheet" href="./css/partials/header/main-header.css">
+    <link rel="stylesheet" href="./css/partials/header/menu-mobile.css">
     <link rel="stylesheet" href="./css/buttons/btn-header.css">
     <link rel="stylesheet" href="./css/buttons/btns-home.css">
     <link rel="stylesheet" href="./css/partials/footer/main-footer.css">
     <link rel="stylesheet" href="./css/pages/desktop/home.css">
     <link rel="stylesheet" href="./css/pages/responsivo/resp-home.css">
+
+    <script src="./css/partials/header/menu-mobile.js" defer></script>
     <title>Home - And Barbershop</title>
 </head>
 
 <body>
+    <!--EXPORTAR A NAV-->
     <header id="header">
         <div class="interface">
 
@@ -45,13 +49,38 @@
                 </a>
             </div><!--btn-agendar-->
 
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="#">SOBRE</a></li>
+                        <li><a href="#">PLANOS E ASSINATURAS</a></li>
+                        <li><a href="./pages/login-usuario.html">LOGIN</a></li>
+                        <li><a href="./pages/escolha-servico.html">AGENDE AQUI</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
         </div><!--interface-->
     </header>
+    <!--EXPORTAR A NAV-->
 
     <main>
         <section class="topo-do-site">
             <div class="interface">
                 <div class="flex">
+                    
                     <div class="txt-topo-site">
 
                         <h1>Uma Experiência <span>Úníca</span></h1>
@@ -68,13 +97,6 @@
             </div><!--interface-->
         </section>
 
-    <!--section class="sobre">
-            <div class="texto-inicial">
-            <h1>Uma Experiência <span>ÚNICA</span></h1>
-            <a href="./pages/escolha-servico.html"><button class="btn-agendar-agora">AGENDAR AGORA</button></a>
-            </div>
-        </section-->
-
     <footer class="main-footer">
         <a class="action" href="https://wa.me/554896443861">
             <img class="img1" src="./css/imgs/icones/icone-whatsapp2.png" alt="Whatsapp And">
@@ -83,7 +105,6 @@
             <img class="img2" src="./css/imgs/icones/icone-instagram2.png" alt="Instagram And">
         </a>
     </footer>
-
     
     </main>
 

@@ -1,11 +1,10 @@
 @keyframes opacidade-moviment{
     0% {
-        top: 60px;
+        transform: translateY(15px);
         opacity: 0%;
     }
 
     100% {
-        top: 20px;
         opacity: 100%;
     }
 }

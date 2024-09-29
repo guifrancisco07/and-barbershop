@@ -13,8 +13,6 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site{
-    position: relative;
-    top: 20px;
     animation: opacidade-moviment 1s ease-out alternate;
 }
 

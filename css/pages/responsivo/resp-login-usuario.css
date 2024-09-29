@@ -1,26 +1,28 @@
 @media screen and (max-width: 960px) {
 
   /* CLASSES GERAIS */
-  .flex-content {
+  section.fundo-section .flex{
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position-x: 53%;
+    gap: 20px;
   }
 
-  .content {
-    margin-bottom: 25%;
-    height: 550px;
+  .fundo-section .container{
+    height: 500px;
     width: 350px;
-  }
 
-  .fundo-section {
-    height: 100vh;
-    background-position: 53%;
-}
+    flex-direction: column;
+    margin-top: 30%;
+    margin-bottom: 20%;
+  }
 
   /* IMG + TXT */
   .text-img {
     height: 250px;
     width: 250px;
-    top: 30px;
+    top: 10px;
     left: 15%;
     animation: none;
   }
@@ -36,7 +38,7 @@
     height: auto;
     width: 70px;
     left: 39%;
-    top: 245px;
+    top: 200px;
   }
 
   .title {
@@ -54,17 +56,13 @@
 
   /* FORM + BTN */
   .form-container {
-    margin-top: -15%;
+    margin-top: -25%;
     width: 300px;
     padding: 10px;
     left: 7.5%;
   }
 
   .form-container .heading {
-    display: none;
-  }
-
-  .main-footer{
     display: none;
   }
 }

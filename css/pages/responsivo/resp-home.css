@@ -11,9 +11,7 @@
 
     /* IMG + TXT */
     .topo-do-site .txt-topo-site{
-        position: relative;
-        top: 20px;
-        left: 30px;
+        padding: 0px 8%;
         animation: opacidade-moviment 1s ease-out alternate;
     }
     
@@ -39,5 +37,4 @@
         width: 120px;
         border-radius: 8px;
     }
-
 }

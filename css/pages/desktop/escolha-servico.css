@@ -1,26 +1,26 @@
-.fundo-section {
-  height: 100vh;
-  background-image: url(../imgs/background/background-home.png);
+.fundo-section{
+  background-image: url(../../imgs/background/background-home.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
-  display: flex;
+section.fundo-section .flex{
+  height: 100vh;
   align-items: center;
   justify-content: center;
 }
 
-.content {
-  background-color: rgba(9, 28, 29, 50%);
-  backdrop-filter: blur(2px);
+.fundo-section .container{
   margin-top: 5%;
   height: 600px;
   width: 1000px;
+  
   border-radius: 15px;
+  background-color: rgba(9, 28, 29, 50%);
+  backdrop-filter: blur(2px);
 
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .text-img {
@@ -186,13 +186,4 @@
   font-size: 14.5px;
   box-shadow: inset 0px 4px 5px #8f5937, inset 0px -4px 5px #774a2e;
   transform: scale(0.995);
-}
-
-@media screen and (max-width: 950px) {
-
-  /* CLASSES GERAIS */
-  .container {
-    flex-direction: column;
-  }
-
 }

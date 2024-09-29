@@ -1,46 +1,48 @@
 @media screen and (max-width: 960px) {
 
     /* CLASSES GERAIS */
-    .flex-content {
+    section.fundo-section .flex{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position-x: 53%;
+        gap: 20px;
     }
 
-    .content {
-        margin-bottom: 15%;
-        height: 570px;
+    .fundo-section .container{
+        
+        height: 510px;
         width: 350px;
-    }
 
-    .fundo-section {
-        height: 100vh;
-        background-position: 53%;
+        flex-direction: column;
+        margin-top: 30%;
+        margin-bottom: 20%;
     }
 
     /* IMG + TXT */
     .text-img {
-        height: 200px;
-        width: 300px;
-        top: 30px;
-        left: 7.5%;
+        height: 160px;
+        width: 250px;
+        top: 20px;
+        left: 50px;
         animation: none;
     }
 
     .img-icon {
-        max-height: 280px;
-        left: 20%;
-        bottom: 65%;
+        max-height: 250px;
+        left: 38px;
+        bottom: 135px;
     }
 
     .title {
         font-size: 35px;
-        top: 9%;
-        left: 28%;
+        top: -5px;
     }
 
     .subtitle {
         font-size: 65px;
-        top: 2%;
-        left: 19%;
+        top: -18px;
+        left: 14%;
     }
 
     /* FORM + BTN */
@@ -49,12 +51,18 @@
         padding: 10px;
         left: 7.5%;
     }
-
+    
     .form-container .heading {
         display: none;
     }
 
-    .main-footer {
-        display: none;
+    .input-field label{
+        font-size: 12px;
+    }
+
+    .input-field input {
+        font-size: 12px;
+        padding: 8px 15px;
+        width: 250px;
     }
 }

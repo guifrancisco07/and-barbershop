@@ -30,12 +30,11 @@
 
 @keyframes aparecer-img-txt1{
     0% {
-        top: 32px;
+        transform: translateY(20px);
         opacity: 0%;
     }
 
     100% {
-        top: 22px;
         opacity: 100%;
     }
 }

@@ -1,28 +1,27 @@
 @media screen and (max-width: 960px) {
 
   /* CLASSES GERAIS */
-  .flex-content {
-    flex-direction: column;
-  }
-
-  .content {    
-    margin-bottom: 15%;
-    background-color: rgba(9, 28, 29, 50%);
-    backdrop-filter: blur(2px);
-    margin-top: 25%;
-    height: 500px;
-    width: 320px;
-    border-radius: 15px;
-
-    display: flex;
+  section.fundo-section .flex{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-position-x: 53%;
+    gap: 20px;
+}
+
+  section.fundo-section .container{
+    flex-direction: column;
   }
 
-  .fundo-section {
-    height: 100vh;
-    background-position: 53%;
+  .fundo-section .container {
+    height: 500px;
+    width: 300px;
+    border-radius: 15px;
+
+    margin-top: 30%;
+
+    align-items: center;
+    justify-content: center;
   }
 
   /* IMG + TXT */
@@ -45,8 +44,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
   }
 
   .title {
@@ -121,9 +118,5 @@
     position: relative;
     left: 77%;
     top: -25px;
-  }
-
-  .main-footer{
-    display: none;
   }
 }
