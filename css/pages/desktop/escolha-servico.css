@@ -13,7 +13,7 @@ section.fundo-section .flex{
 
 .fundo-section .container{
   margin-top: 5%;
-  height: 600px;
+  height: 70vh;
   width: 1000px;
   
   border-radius: 15px;
@@ -21,6 +21,7 @@ section.fundo-section .flex{
   backdrop-filter: blur(2px);
 
   display: flex;
+  align-items: center;
 }
 
 .text-img {
@@ -72,7 +73,7 @@ section.fundo-section .flex{
 }
 
 .lista-servico {
-  max-height: 600px;
+  max-height: 70vh;
   width: 1000px;
   border-radius: 15px;
 
@@ -182,8 +183,7 @@ section.fundo-section .flex{
     inset 0px -4px 5px #8d5735;
 }
 
-.btn-select:active {
-  font-size: 14.5px;
-  box-shadow: inset 0px 4px 5px #8f5937, inset 0px -4px 5px #774a2e;
-  transform: scale(0.995);
+.btn-select:hover{
+    box-shadow: 0px 2px 8px #d0804e;
+    transform: scale(1.05);
 }

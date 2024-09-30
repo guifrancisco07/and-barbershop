@@ -3,6 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: 0%;
 }
 
 section.topo-do-site .flex{
@@ -13,6 +14,8 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site{
+    width: 100%;
+    padding: 0px 6%;
     animation: opacidade-moviment 1s ease-out alternate;
 }
 

@@ -1,6 +1,10 @@
 @media screen and (max-width: 960px) {
 
     /* CLASSES GERAIS */
+    .topo-do-site{
+        background-position-x: 48%;
+    }
+
     section.topo-do-site .flex{
         height: 100vh;
         flex-direction: column;
@@ -12,27 +16,13 @@
     /* IMG + TXT */
     .topo-do-site .txt-topo-site{
         padding: 0px 8%;
-        animation: opacidade-moviment 1s ease-out alternate;
     }
     
     .topo-do-site .txt-topo-site h1{
-        color: #f7d2a9;
         font-size: 2.3em;
-        font-family: Espiritu Cond;
-    }
-    
-    .topo-do-site .txt-topo-site h1 span{
-        color: #fff;
     }
 
     .btn-agendar-agora {
-        background-color: #b66f43;
-        color: #f7d2a9;
-        font-family: Espiritu;
-        font-size: 12px;
-    
-        top: 0px;
-        border: 0;
         height: 25px;
         width: 120px;
         border-radius: 8px;

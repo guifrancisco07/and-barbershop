@@ -10,56 +10,59 @@
   }
 
   .fundo-section .container{
-    height: 500px;
     width: 350px;
 
     flex-direction: column;
     margin-top: 30%;
     margin-bottom: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* IMG + TXT */
   .text-img {
-    height: 250px;
+    height: 35vh;
     width: 250px;
-    top: 10px;
-    left: 15%;
+
+    left: 0;
+    top: 2  0px;
     animation: none;
   }
 
   .img-form {
-    height: 350px;
+    height: 300px;
     width: auto;
-    left: -1.5%;
-    bottom: 70%;
-  }
-
-  .img-icon {
-    height: auto;
-    width: 70px;
-    left: 39%;
-    top: 200px;
+    top: -70%;
+    left: 17px;
   }
 
   .title {
     font-size: 45px;
-    top: 38%;
-    left: 25%;
+    left: 26%;
   }
 
   .subtitle {
     font-size: 65px;
     text-shadow: -2px -2px 2px #0d2829;
-    top: 35%;
     left: 17%;
+    top: 28%;
   }
 
   /* FORM + BTN */
   .form-container {
-    margin-top: -25%;
+    height: 30vh;
     width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     padding: 10px;
-    left: 7.5%;
+    top: 0;
+    left: 0;
+    padding: 40px 4%;
   }
 
   .form-container .heading {

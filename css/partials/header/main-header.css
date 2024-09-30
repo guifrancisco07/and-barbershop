@@ -64,6 +64,18 @@ header nav.menu-desktop ul li{
     width: 120px;
 }
 
-.menu-mobile, .btn-abrir-menu i{
+.menu-mobile, .btn-abrir-menu{
     display: none;
+}
+
+@media screen and (max-width: 1130px) {
+    
+    header nav a{
+        padding: 2px 14px;
+    }
+
+    header nav.menu-desktop ul li{
+        display: inline-block;
+        padding: 0 10px;
+    }
 }
