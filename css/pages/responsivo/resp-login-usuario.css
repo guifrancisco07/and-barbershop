@@ -1,0 +1,71 @@
+@media screen and (max-width: 960px) {
+
+  /* CLASSES GERAIS */
+  section.fundo-section .flex{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position-x: 53%;
+    gap: 20px;
+  }
+
+  .fundo-section .container{
+    width: 350px;
+
+    flex-direction: column;
+    margin-top: 30%;
+    margin-bottom: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* IMG + TXT */
+  .text-img {
+    height: 35vh;
+    width: 250px;
+
+    left: 0;
+    top: 2  0px;
+    animation: none;
+  }
+
+  .img-form {
+    height: 300px;
+    width: auto;
+    top: -70%;
+    left: 17px;
+  }
+
+  .title {
+    font-size: 45px;
+    left: 26%;
+  }
+
+  .subtitle {
+    font-size: 65px;
+    text-shadow: -2px -2px 2px #0d2829;
+    left: 17%;
+    top: 28%;
+  }
+
+  /* FORM + BTN */
+  .form-container {
+    height: 30vh;
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    top: 0;
+    left: 0;
+    padding: 40px 4%;
+  }
+
+  .form-container .heading {
+    display: none;
+  }
+}
