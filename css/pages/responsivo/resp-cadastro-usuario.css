@@ -2,6 +2,7 @@
 
     /* CLASSES GERAIS */
     section.fundo-section .flex {
+        height: 100vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -10,53 +11,68 @@
     }
 
     .fundo-section .container {
-        height: 470px;
+        margin-top: 15%;
+        height: 70vh;
         width: 350px;
-        
+
+        display: flex;
         flex-direction: column;
-        margin-top: 40%;
-        margin-bottom: 20%;
+        align-items: center;
+        justify-content: center;
     }
 
     /* IMG + TXT */
     .text-img {
-        height: 160px;
+        margin-top: 20%;
+        height: 200px;
         width: 250px;
-        top: 10px;
-        left: 50px;
+
+        position: relative;
+        left: 0;
+        top: 0;
         animation: none;
     }
 
     .img-icon {
-        max-height: 180px;
-        bottom: 128px;
-        left: -10px;
+        position: absolute;
+        height: 140px;
+        width: auto;
+        
+        left: 0;
+        bottom: -10px;
     }
 
     .title {
         font-size: 35px;
-        top: 20%;
-        left: 80px;
+        top: 8%;
+        left: 70px;
     }
 
     .subtitle {
         font-size: 65px;
-        top: 15%;
-        left: 80px;
+        top: 1%;
+        left: 70px;
     }
 
     /* FORM + BTN */
     .form-container {
+        height: 400px;
         width: 300px;
-        padding: 10px;
-        left: 7.5%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        top: 0;
+        left: 0;
+        padding: 40px 4%;
     }
-    
+
     .form-container .heading {
         display: none;
     }
 
-    .input-field label{
+    .input-field label {
         font-size: 12px;
     }
 

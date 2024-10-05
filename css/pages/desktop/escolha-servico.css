@@ -1,26 +1,3 @@
-/* HEADER ESPECÍFICO PARA ESSA PÁGINA
-header nav a{
-  color: #4b3e2e !important;
-  background-color: #b4936d !important;
-}
-
-header nav.menu-desktop a:hover{
-  color: #fff !important;
-  background-color: #ddb484 !important;
-}
-
-header .btn-agendar-header button{
-  color: #4b3e2e !important;
-  background-color: #b4936d !important;
-}
-
-header .btn-agendar-header button:hover{
-  box-shadow: 0px 0px 8px #6b5841 !important;
-  background-color: #d3ac80 !important;
-  color: #6b5841 !important;
-}
-/* FIM ESTILO HEADER */
-
 .fundo-section{
   background-image: url(../../imgs/background/background-home.png);
   background-position: center;

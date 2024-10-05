@@ -10,10 +10,11 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
+    background-position-x: 0%;
   }
   
 .fundo-section .container {
-    height: 500px;
+    height: 65vh;
     width: 1000px;
     
     border-radius: 25px;
@@ -21,20 +22,20 @@
     backdrop-filter: blur(2px);
 
     display: flex;
+    align-items: center;
 }
 
 .text-img {
-    background-color: transparent;
     height: 320px;
     width: 430px;
 
     position: relative;
-    top: 85px;
+    top: 0px;
     left: 8%;
 
     line-height: 1.8em;
 
-    animation: aparecer-img-txt2 .7s ease-out alternate;
+    animation: aparecer-img-txt1 .7s ease-out alternate;
 }
 
 .title {
@@ -59,7 +60,8 @@
 
 .img-icon {
     z-index: 1;
-    max-height: 450px;
+    height: auto;
+    width: 300px;
     transform: rotate(-92.5deg);
 
     position: relative;
@@ -70,17 +72,16 @@
 }
 
 .form-container {
-    background-color: transparent
-        /*var(--main-bg-color)*/
-    ;
-    margin: 0;
+    background-color: transparent /*var(--main-bg-color)*/;
     border-radius: 20px;
+    
+    margin: 0;
+    margin-top: 1%;
 
     width: 40%;
     padding: 50px;
     position: relative;
     left: 9%;
-    margin-top: 1%;
 
     animation: aparecer-form .5s ease-out alternate;
 }

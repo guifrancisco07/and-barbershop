@@ -57,7 +57,7 @@ header nav ul{
 
 header nav.menu-desktop ul li{
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 30px;
 }
 
 .logo img{
@@ -69,14 +69,24 @@ header nav.menu-desktop ul li{
     display: none;
 }
 
-@media screen and (max-width: 1300px) {
-    
-    header nav a{
-        padding: 2px 14px;
-    }
+@media screen and (max-width: 1330px) {
 
     header nav.menu-desktop ul li{
-        display: inline-block;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+
+    header nav.menu-desktop ul li{
         padding: 0 10px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    header nav.menu-desktop ul li{
+        padding: 0 5px;
     }
 }

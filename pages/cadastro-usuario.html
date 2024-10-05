@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/fonts/font-imports.css">
     <link rel="stylesheet" href="../css/partials/header/main-header.css">
     <link rel="stylesheet" href="../css/partials/header/menu-mobile.css">
+    <link rel="stylesheet" href="../css/partials/header/info-conta.css">
     <link rel="stylesheet" href="../css/buttons/btn-header.css">
     <link rel="stylesheet" href="../css/buttons/btns-form.css">
     <link rel="stylesheet" href="../css/partials/footer/main-footer.css">
@@ -43,11 +44,22 @@
                 </ul>
             </nav>
 
-            <div class="btn-agendar-header">
-                <a href="../pages/escolha-servico.html">
-                    <button>Agende Aqui</button>
-                </a>
-            </div><!--btn-agendar-->
+            <div class="info-conta">
+                <div class="flex">
+    
+                    <!-- Adicione um novo elemento HTML para exibir a imagem -->
+                    <div class="img-conta">
+                        <img src="/css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
+                    </div>
+    
+                    <div class="txt-conta">
+                        <a class="href" href="/pages/cadastro-usuario.html">Cadastrar-se Agora</a>
+                        <hr>
+                        <a class="href" href="/pages/login-usuario.html">Realizar Login</a>
+                    </div>
+    
+                </div><!--flex-->
+            </div><!--info-conta-->
 
             <div class="btn-abrir-menu" id="btn-menu">
                 <i class="bi bi-list"></i>
@@ -93,7 +105,7 @@
                         <form class="form" action="">
     
                             <div class="input-field">
-                                <input autofocus required="" autocomplete="off" type="text" name="nome" id="nome" />
+                                <input required="" autocomplete="off" type="text" name="nome" id="nome" />
                                 <label for="nome">Nome</label>
                             </div>
     
