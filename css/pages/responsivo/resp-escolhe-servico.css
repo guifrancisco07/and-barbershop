@@ -15,6 +15,7 @@
   }
 
   .fundo-section .container {
+    margin-top: 15%;
     height: 500px;
     width: 300px;
     border-radius: 15px;
