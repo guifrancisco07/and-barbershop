@@ -11,7 +11,7 @@
     }
 
     .fundo-section .container{
-        margin-top: 10%;
+        margin-top: 15%;
         height: 70vh;
         width: 350px;
 
@@ -30,7 +30,6 @@
         position: relative;
         left: 0;
         top: 0;
-        animation: none;
     }
 
     .img-icon {
