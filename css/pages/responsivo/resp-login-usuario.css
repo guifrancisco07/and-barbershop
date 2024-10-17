@@ -2,6 +2,7 @@
 
   /* CLASSES GERAIS */
   section.fundo-section .flex{
+    min-height: 100vh;
     flex-direction: column;
     background-position-x: 53%;
     gap: 20px;
