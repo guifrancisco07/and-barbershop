@@ -2,22 +2,17 @@
 
     /* CLASSES GERAIS */
     section.fundo-section .flex {
-        height: 100vh;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         background-position-x: 53%;
         gap: 20px;
     }
 
     .fundo-section .container {
-        margin-top: 15%;
-        height: 70vh;
-        width: 350px;
+        margin-top: 20%;
+        height: 500px;
+        width: auto;
 
-        display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
     }
 

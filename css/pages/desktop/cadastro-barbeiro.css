@@ -1,20 +1,21 @@
 .fundo-section {
-    height: 100vh;
-    background-image: url(../../imgs/background/background-home.png);
+    min-height: 100vh;
+    background-image: url(../../imgs/background/background-manager.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
   
   section.fundo-section .flex{
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     background-position-x: 0%;
-  }
+    overflow: hidden;
+}
   
 .fundo-section .container {
-    height: 65vh;
+    height: 510px;
     width: 1000px;
     
     border-radius: 25px;

@@ -1,5 +1,5 @@
 .fundo-section {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../../imgs/background/background-home.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -7,14 +7,15 @@
 }
 
 section.fundo-section .flex{
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     background-position-x: 0%;
+    overflow: hidden;
 }
 
 .fundo-section .container {
-    height: 65vh;
+    height: 510px;
     width: 1000px;
     
     background-color: rgba(9, 28, 29, 50%);
@@ -131,6 +132,7 @@ section.fundo-section .flex{
 .input-field input {
     font-size: 14px;
     letter-spacing: 1px;
+    font-family: Poppins-Regular;
 
     background-color: #f7d2a9;
     border: solid 3px #d4ad80;

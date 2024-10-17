@@ -1,4 +1,5 @@
 .fundo-section{
+  min-height: 100vh;
   background-image: url(../../imgs/background/background-home.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -6,14 +7,15 @@
 }
 
 section.fundo-section .flex{
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
+  background-position-x: 0%;
+  overflow: hidden;
 }
 
 .fundo-section .container{
-  margin-top: 7%;
-  height: 70vh;
+  height: 510px;
   width: 1000px;
   
   border-radius: 15px;
@@ -74,7 +76,7 @@ section.fundo-section .flex{
 }
 
 .lista-servico {
-  max-height: 70vh;
+  max-height: 500px;
   width: 1000px;
   border-radius: 15px;
 
@@ -128,7 +130,7 @@ section.fundo-section .flex{
 
 .preco-servico {
   z-index: 1;
-  font-family: Espiritu;
+  font-family: Poppins-Medium;
   font-size: 15px;
 
   display: flex;
@@ -139,9 +141,15 @@ section.fundo-section .flex{
   bottom: 15px;
 }
 
+.element span{
+  font-family: Poppins-Bold;
+  color: #fff;
+}
+
 .duracao-servico {
   z-index: 1;
-  font-family: Espiritu;
+  font-family: Poppins-SemiBold;
+  font-size: 12px;
 
   display: flex;
   justify-content: flex-end;

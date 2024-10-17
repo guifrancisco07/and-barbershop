@@ -1,5 +1,5 @@
 .fundo-section {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../../imgs/background/background-home.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -7,14 +7,15 @@
 }
 
 section.fundo-section .flex{
-  height: 100vh;
+  min-height: 110vh;
   align-items: center;
   justify-content: center;
   background-position-x: 0%;
+  overflow: hidden;
 }
 
 .fundo-section .container {
-  height: 70vh;
+  height: 520px;
   width: 1000px;
   
   background-color: rgba(9, 28, 29, 50%);
@@ -73,25 +74,10 @@ section.fundo-section .flex{
   bottom: 58%;
 }
 
-.img-icon {
-  z-index: 1;
-  height: 150px;
-  width: auto;
-  transform: rotate(-90deg);
-
-  position: relative;
-  left: -0.5%;
-  top: 420px;
-}
-
 .form-container {
   background-color: transparent /*var(--main-bg-color)*/;
 
   border-radius: 20px;
-  /*  
-    border: solid 2px #b4936d;
-    box-shadow: inset 0px 4px 1px #8a7053, inset 0px -4px 1px #8a7053;
-   */
   width: 35%;
   padding: 50px;
   position: relative;
@@ -163,6 +149,7 @@ section.fundo-section .flex{
 .input-field input {
   font-size: 14px;
   letter-spacing: 1px;
+  font-family: Poppins-Regular;
 
   background-color: #f7d2a9;
   border: solid 3px #d4ad80;
