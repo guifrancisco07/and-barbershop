@@ -6,58 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="icon" href="./css/imgs/logo/aba-logo-and.png" sizes="16x16">
+    <link rel="icon" href="/css/imgs/logo/aba-logo-and.png" sizes="16x16">
 
-    <link rel="stylesheet" href="./css/pages/desktop/index.css">
-    <link rel="stylesheet" href="./css/animations/animations-txt.css">
-    <link rel="stylesheet" href="./css/fonts/font-imports.css">
-    <link rel="stylesheet" href="./css/partials/header/main-header.css">
-    <link rel="stylesheet" href="./css/partials/header/menu-mobile.css">
-    <link rel="stylesheet" href="./css/partials/header/info-conta.css">
-    <link rel="stylesheet" href="./css/buttons/btn-header.css">
-    <link rel="stylesheet" href="./css/buttons/btns-home.css">
-    <link rel="stylesheet" href="./css/partials/footer/main-footer.css">
-    <link rel="stylesheet" href="./css/pages/desktop/home.css">
-    <link rel="stylesheet" href="./css/pages/responsivo/resp-home.css">
+    <link rel="stylesheet" href="/css/pages/desktop/index.css">
+    <link rel="stylesheet" href="/css/fonts/font-imports.css">
+    <link rel="stylesheet" href="/css/buttons/btns-home.css">
+    <link rel="stylesheet" href="/css/buttons/btns-form.css">
 
-    <script src="./css/partials/header/menu-mobile.js" defer></script>
+    <link rel="stylesheet" href="/css/animations/animations-txt.css">
+
+    <link rel="stylesheet" href="/css/pages/desktop/home/home.css">
+    <link rel="stylesheet" href="/css/pages/responsivo/resp-home.css">
+
+    <script src="/css/partials/header/menu-mobile.js" defer></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/css/partials/reveal/reveal.js" defer></script>
     <title>Home - And Barbershop</title>
 </head>
 
 <body>
-    <!--EXPORTAR A NAV-->
+    <link rel="stylesheet" href="/css/partials/header/main-header.css">
+    <link rel="stylesheet" href="/css/partials/header/menu-mobile.css">
+    <link rel="stylesheet" href="/css/partials/header/info-conta.css">
+
     <header id="header">
         <div class="interface">
 
             <div class="logo">
-                <a href="./index.html">
-                    <img src="./css/imgs/logo/logo-png.png" alt="logo-nav">
+                <a href="/">
+                    <img src="/css/imgs/logo/logo-png.png" alt="logo-nav">
                 </a>
             </div><!--logo-->
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="./index.html">HOME</a></li>
-                    <li><a href="#">SOBRE</a></li>
-                    <li><a href="#">PLANOS E ASSINATURAS</a></li>
-                    <li><a href="./pages/escolha-servico.html">AGENDE AQUI</a></li>
+                    <li><a href="#topo-do-site">HOME</a></li>
+
+                <li class="dropdown">
+                    <a id="sobre-link" href="#sec-sobre">SOBRE<i class="bi bi-caret-down-fill"></i></a>
+
+                    <div class="dropdown-menu">
+                        <a href="#sec-sobre">ATENDIMENTO</a>
+                        <a href="#sec-servicos">SERVIÇOS</a>
+                        <a href="#sec-feed">FEEDBACKS</a>
+                    </div>
+                </li>
+                <li><a href="#sec-planos">PLANOS E ASSINATURAS</a></li>
+                <li><a href="/agendamentos">AGENDE AQUI</a></li>
                 </ul>
             </nav>
 
             <div class="info-conta">
                 <div class="flex">
-    
-                    <!-- Adicione um novo elemento HTML para exibir a imagem -->
+
                     <div class="img-conta">
-                        <img src="./css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
+                        <img src="/css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
                     </div>
-    
+
                     <div class="txt-conta">
-                        <a class="href" href="./pages/cadastro-usuario.html">Cadastrar-se Agora</a>
+                        <a class="href" href="/pages/cadastro/cadastro-usuario.html">Cadastrar-se Agora</a>
                         <hr>
-                        <a class="href" href="./pages/login-usuario.html">Realizar Login</a>
+                        <a class="href" href="/pages/login-usuario.html">Realizar Login</a>
                     </div>
-    
+
                 </div><!--flex-->
             </div><!--info-conta-->
 
@@ -72,11 +84,14 @@
 
                 <nav>
                     <ul>
-                        <li><a href="./index.html">HOME</a></li>
-                        <li><a href="#">SOBRE</a></li>
-                        <li><a href="#">PLANOS E ASSINATURAS</a></li>
-                        <li><a href="./pages/login-usuario.html">LOGIN</a></li>
-                        <li><a href="./pages/escolha-servico.html">AGENDE AQUI</a></li>
+                        <li><a href="/index.html"><i class="bi bi-house-door-fill"></i>Home</a></li>
+                        <li><a href="#sec-sobre"><i class="bi bi-person-lines-fill"></i>Nosso Atendimento</a></li>
+                        <li><a href="#sec-servicos"><i class="bi bi-scissors"></i>Nossos Serviços</a></li>
+                        <li><a href="#sec-feed"><i class="bi bi-chat-square-text-fill"></i>Feedbacks</a></li>
+                        <li><a href="#sec-planos"><i class="bi bi-journal-bookmark-fill"></i>Planos e Assinaturas</a>
+                        </li>
+                        <li><a href="/pages/agendamento/escolha-servico.html"><i class="bi bi-journal-check"></i>Agende
+                                Aqui</a></li>
                     </ul>
                 </nav>
 
@@ -85,39 +100,485 @@
             <div class="overlay-menu" id="overlay-menu"></div>
 
         </div><!--interface-->
+        <script>
+            const link = document.getElementById("sobre-link");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+            const icon = link.querySelector("i");
+    
+            // Função para verificar o estado do dropdown e ajustar o ícone
+            function toggleIcon() {
+                if (dropdownMenu.classList.contains("show")) {
+                    icon.classList.remove("bi-caret-down-fill");
+                    icon.classList.add("bi-caret-up-fill");
+                } else {
+                    icon.classList.remove("bi-caret-up-fill");
+                    icon.classList.add("bi-caret-down-fill");
+                }
+            }
+    
+            // Supondo que você controle o menu com um clique ou outro evento
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                dropdownMenu.classList.toggle("show");
+                toggleIcon();
+            });
+    
+            // Opcional: Fechar o menu ao clicar fora dele
+            document.addEventListener("click", (e) => {
+                if (!dropdownMenu.contains(e.target) && !link.contains(e.target)) {
+                    dropdownMenu.classList.remove("show");
+                    toggleIcon();
+                }
+            });
+        </script>
     </header>
     <!--EXPORTAR A NAV-->
 
     <main>
-        <section class="topo-do-site">
+
+        <section class="topo-do-site" id="topo-do-site">
             <div class="interface">
                 <div class="flex">
-                    
-                    <div class="txt-topo-site">
 
-                        <h1>Uma Experiência <span>Única</span></h1>
+                    <div class="txt-topo-site efeito-txt-topo">
 
-                        <div class="btn-agendar">
-                            <a href="./pages/escolha-servico.html">
+                        <h1 class="efeito-frase-topo">Uma Experiência&nbsp;<span>Única</span></h1>
+
+                        <div class="btn-agendar efeito-btn-topo">
+                            <a href="/agendamentos">
                                 <button class="btn-agendar-agora">AGENDAR AGORA</button>
                             </a>
                         </div><!--btn-agendar-->
 
                     </div><!--txt-topo-site-->
-                    
+
                 </div><!--flex-->
             </div><!--interface-->
         </section>
 
-    <footer class="main-footer">
-        <a class="action" href="https://wa.me/554896443861">
-            <img class="img1" src="./css/imgs/icones/icone-whatsapp2.png" alt="Whatsapp And">
-        </a>
-        <a class="action" href="https://www.instagram.com/andradebarber.shop/">
-            <img class="img2" src="./css/imgs/icones/icone-instagram2.png" alt="Instagram And">
-        </a>
-    </footer>
-    
+        <section class="sec-sobre" id="sec-sobre">
+            <div class="interface">
+                <div class="flex">
+
+                    <link rel="stylesheet" href="/css/pages/desktop/home/section-sobre.css">
+
+                    <div class="txt-topo-site efeito-heading-sobre"><!--ARRUMAR RESPONSIVO-->
+                        <h1>SOBRE <span>NOSSO ATENDIMENTO</span></h1>
+                    </div><!--txt-topo-site-->
+
+                    <div class="container">
+                        <img class="img-esquerda efeito-img-sobre" src="/css/imgs/imagens/card-atendimento.png"
+                            alt="Foto Atendimento">
+
+                        <div class="txt-direita efeito-txt-sobre">
+                            <h1>Aqui na <span class="font-edt">AND BARBERSHOP</span> nos preocupamos com cada detalhe no
+                                seu atendimento. Priorizamos o seu bem-estar e conforto, assim <span
+                                    class="line-bottom">trazendo à você <span class="font-edt">uma Experiência
+                                        Única!</span></span></h1>
+                        </div>
+                    </div><!--container-->
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section>
+
+        <section class="sec-servicos" id="sec-servicos">
+            <div class="interface">
+                <div class="flex">
+
+                    <link rel="stylesheet" href="/css/pages/desktop/home/section-servicos.css">
+
+                    <div class="txt-topo-site efeito-heading-sobre"><!--ARRUMAR RESPONSIVO-->
+                        <h1>NOSSOS <span>SERVIÇOS</span></h1>
+                    </div><!--txt-topo-site-->
+
+                    <div class="container-servicos">
+
+                        <ul class="ul-servicos efeito-ul-sobre">
+                            <li><a class="nome-servico"><span>01.</span> Recorte de Cabelo</a></li>
+                            <li><a class="nome-servico"><span>02.</span> Corte Social</a></li>
+                            <li><a class="nome-servico"><span>03.</span> Degradê</a></li>
+                            <li><a class="nome-servico"><span>04.</span> Degradê Navalhado</a></li>
+                            <li><a class="nome-servico"><span>05.</span> Freestyle</a></li>
+                            <li><a class="nome-servico"><span>06.</span> Bigode</a></li>
+                            <li><a class="nome-servico"><span>07.</span> Barba</a></li>
+                            <li><a class="nome-servico"><span>08.</span> Barboterapia</a></li>
+                            <li><a class="nome-servico"><span>09.</span> Sobrancelha</a></li>
+                            <li><a class="nome-servico"><span>10.</span> Depilação de Nariz (Cera)</a></li>
+                            <li><a class="nome-servico"><span>11.</span> Depilação de Orelha (Cera)</a></li>
+                            <li><a class="nome-servico"><span>12.</span> Limpeza de Pele</a></li>
+                            <li><a class="nome-servico"><span>13.</span> Coloração</a></li>
+                            <li><a class="nome-servico"><span>14.</span> Platinado/Descoloração</a></li>
+                        </ul>
+                        <div class="img-mobile efeito-img-servicos"></div>
+                        <img class="img-esquerda efeito-img-servicos" src="/css/imgs/imagens/card-servicos.png"
+                            alt="Foto Atendimento">
+                    </div><!--container-->
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section>
+
+        <section class="sec-feed" id="sec-feed">
+            <div class="interface">
+                <div class="flex">
+
+                    <link rel="stylesheet" href="/css/pages/desktop/home/section-feed.css">
+
+                    <div class="container-feed esquerda">
+                        <div class="flex">
+                            <div class="txt-topo-site efeito-heading-sobre"><!--ARRUMAR RESPONSIVO-->
+                                <h1>FEEDBACKS</h1>
+                            </div><!--txt-topo-site-->
+
+                            <div class="card card1 efeito-card-esquerda">
+                                <div class="img-nome">
+                                    <img src="/css/imgs/foto-barbeiro/guilherme.png" alt="Foto Usuário">
+                                    <div class="estrelas">
+                                        <h1>Guilherme Francisco</h1>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="comentario">
+                                    <h2>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vitae pariatur
+                                        enim molestiae ipsa? Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-feed meio efeito-card-meio">
+                        <div class="flex">
+                            <div class="card card2 efeito-card-meio1">
+                                <div class="img-nome">
+                                    <img src="/css/imgs/foto-barbeiro/barber-gustavo.png" alt="Foto Usuário">
+                                    <div class="estrelas">
+                                        <h1>Gustavo Henrique</h1>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                    </div>
+                                </div>
+                                <div class="comentario">
+                                    <h2>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi facilis modi
+                                        voluptatum quasi recusandae, repellendus voluptatibus temporibus laudantium
+                                        voluptates maiores magni optio eveniet soluta nesciunt pariatur quaerat
+                                        necessitatibus reprehenderit culpa!"</h2>
+                                </div>
+                            </div>
+                            <div class="card card3 efeito-card-meio2">
+                                <div class="img-nome">
+                                    <img src="/css/imgs/foto-barbeiro/barber-bruno.png" alt="Foto Usuário">
+                                    <div class="estrelas">
+                                        <h1>Bruno Eugênio</h1>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                    </div>
+                                </div>
+                                <div class="comentario">
+                                    <h2>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vitae pariatur
+                                        enim molestiae ipsa?"</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="container-feed direita efeito-card-direita">
+                        <div class="flex">
+                            <div class="card card4 efeito-card-direita1">
+                                <div class="img-nome">
+                                    <img src="/css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
+                                    <div class="estrelas">
+                                        <h1>Vinícius da Silva</h1>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="comentario">
+                                    <h2>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vitae pariatur
+                                        enim molestiae ipsa?"</h2>
+                                </div>
+                            </div>
+                            <div class="card card4 efeito-card-direita2">
+                                <div class="img-nome">
+                                    <img src="/css/imgs/foto-barbeiro/lucas.png" alt="Foto Usuário">
+                                    <div class="estrelas">
+                                        <h1>Lucas de Aguiar C.</h1>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                        <i class="bi bi-star-fill opaca"></i>
+                                    </div>
+                                </div>
+                                <div class="comentario">
+                                    <h2>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vitae pariatur
+                                        enim molestiae ipsa?"</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section>
+
+        <section class="sec-planos" id="sec-planos">
+            <div class="interface">
+                <div class="flex">
+
+                    <link rel="stylesheet" href="/css/pages/desktop/home/section-planos.css">
+                    <link rel="stylesheet" href="/css/pages/responsivo/home/resp-section-planos.css">
+
+                    <div class="txt-topo-site efeito-frase-topo"><!--ARRUMAR RESPONSIVO-->
+                        <h1>Planos <span>AND BARBERSHOP</span></h1>
+                    </div><!--txt-topo-site-->
+
+                    <div class="container-planos efeito-container-form">
+                        <ul class="ul-planos">
+                            <li class="card efeito-card-plano-1">
+                                <div class="content">
+
+                                    <h2>01</h2>
+                                    <h3>PLANO MENSAL 1</h3>
+
+                                    <p class="text" id="desc-curta">Descrição:&nbsp;<span>Acesso vitalício para Cortes
+                                            de Cabelo</span></p>
+                                    <p class="preco"><i class="bi bi-cash-stack"></i>&nbsp;<span>R$</span>99,90</p>
+
+                                    <div class="btn-container">
+                                        <button id="abre-modal-plano1" class="btn-infos">
+                                            <i class="bi bi-info-circle"></i>Mais informações
+                                        </button>
+                                    </div>
+
+                                </div><!--content-->
+                            </li><!--card-->
+
+                            <li class="card efeito-card-plano-2">
+                                <div class="content">
+
+                                    <h2>02</h2>
+                                    <h3>PLANO MENSAL 2</h3>
+
+                                    <p class="text" id="desc-curta">Descrição:&nbsp;<span>Acesso vitalício para Cortes
+                                            de Cabelo e Barba</span></p>
+                                    <p class="preco"><i class="bi bi-cash-stack"></i>&nbsp;<span>R$</span>159,90</p>
+
+                                    <div class="btn-container">
+                                        <button id="abre-modal-plano2" class="btn-infos">
+                                            <i class="bi bi-info-circle"></i>Mais informações
+                                        </button>
+                                    </div>
+
+                                </div><!--content-->
+                            </li><!--card-->
+
+                            <li class="card efeito-card-plano-3">
+                                <div class="content">
+
+                                    <h2>03</h2>
+                                    <h3>PLANO TRIMESTRAL</h3>
+
+                                    <p class="text" id="desc-curta">Descrição:&nbsp;<span>Acesso vitalício para Cortes
+                                            de Cabelo e Barba</span></p>
+                                    <p class="preco"><i class="bi bi-cash-stack"></i>&nbsp;<span>R$</span>289,90</p>
+
+                                    <div class="btn-container">
+                                        <button id="abre-modal-plano3" class="btn-infos">
+                                            <i class="bi bi-info-circle"></i>Mais informações
+                                        </button>
+                                    </div>
+
+                                </div><!--content-->
+                            </li><!--card-->
+                            
+                            <link rel="stylesheet" href="/css/partials/modal/modal-planos.css">
+
+                            <script src="/css/partials/modal/modal-planos.js" defer></script>
+
+                            <dialog id="modal_plano_1">
+                                <div class="content-modal">
+                                    <div class="title-img">
+                                        <h3 class="id-titulo">01</h3>
+                                        <h2 class="titulo">PLANO MENSAL 1</h2>
+                                    </div>
+
+                                    <div class="mais-info">
+                                        <div>
+                                            <h1>Descrição:</h1>
+                                            <a class="descricao" id="desc-longa">Acesso vitalício para
+                                                Cortes de Cabelo durante 1 mês, podendo agendar quantas
+                                                vezes desejar</a>
+                                        </div>
+
+                                        <div>
+                                            <h1>Preço: </h1>
+                                            <i class="bi bi-cash-stack"></i><a class="preco">R$99,90</a><br>
+                                            <h1 class="obs"><i class="bi bi-exclamation-triangle"></i>*valor
+                                                da assinatura</h1>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn" id="btn-fecha-1">Fechar</button>
+                                </div>
+                            </dialog>
+                            
+                            <dialog id="modal_plano_2">
+                                <div class="content-modal">
+                                    <div class="title-img">
+                                        <h3 class="id-titulo">02</h3>
+                                        <h2 class="titulo">PLANO MENSAL 2</h2>
+                                    </div>
+                                    
+                                    <div class="mais-info">
+                                        <div>
+                                            <h1>Descrição:</h1>
+                                            <a class="descricao" id="desc-longa">Acesso vitalício para Cortes de Cabelo e Barba durante 1 mês, podendo agendar quantas vezes desejar</a>
+                                        </div>
+                                        
+                                        <div>
+                                            <h1>Preço: </h1>
+                                            <i class="bi bi-cash-stack"></i><a class="preco">R$159,90</a><br>
+                                            <h1 class="obs"><i class="bi bi-exclamation-triangle"></i>*valor da assinatura</h1>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn" id="btn-fecha-2">Fechar</button>
+                                </div>
+                            </dialog>
+
+                            <dialog id="modal_plano_3">
+                                <div class="content-modal">
+                                    <div class="title-img">
+                                        <h3 class="id-titulo">03</h3>
+                                        <h2 class="titulo">PLANO TRIMESTRAL</h2>
+                                    </div>
+                                    
+                                    <div class="mais-info">
+                                        <div>
+                                            <h1>Descrição:</h1>
+                                            <a class="descricao" id="desc-longa">Acesso vitalício para Cortes de Cabelo e Barba durante 3 meses, podendo agendar quantas vezes desejar</a>
+                                        </div>
+                                        
+                                        <div>
+                                            <h1>Preço: </h1>
+                                            <i class="bi bi-cash-stack"></i><a class="preco">R$99,90</a><br>
+                                            <h1 class="obs"><i class="bi bi-exclamation-triangle"></i>*valor da assinatura</h1>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn" id="btn-fecha-3">Fechar</button>
+                                </div>
+                            </dialog>
+                    </div><!--container-->
+                    </ul>
+
+
+                    <script src="/css/partials/cards/vanilla-tilt.js"></script>
+                    <script>
+                        VanillaTilt.init(document.querySelectorAll(".card"), {
+                            max: 25,
+                            speed: 400,
+                            glare: true,
+                            "max-glare": 0.3,
+                        });
+                    </script>
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section>
+
+        <link rel="stylesheet" href="/css/partials/footer/main-footer.css">
+        <link rel="stylesheet" href="/css/partials/footer/resp-main-footer.css">
+
+        <footer class="main-footer">
+            <div class="interface">
+
+                <div class="top-footer esconder-container">
+
+                    <div class="coluna1 efeito-coluna1-footer">
+                        <div class="logo">
+                            <img src="/css/imgs/logo/logo-png.png" alt="logo-nav">
+                        </div><!--logo-->
+
+                        <div class="text-logo">
+                            <h5>And Barbershop combina estilo e tradição em um ambiente acolhedor e sofisticado. Com
+                                cortes modernos, barbas impecáveis e atendimento personalizado, proporcionamos uma
+                                experiência única para quem valoriza qualidade e elegância.</h5>
+                        </div>
+                    </div><!--coluna1-->
+
+                    <div class="coluna2 efeito-coluna2-footer">
+                        <div class="heading-footer barbearia"><i class="bi bi-house-fill"></i>Nossa Barbearia</div>
+                        <ul>
+                            <li><i class="bi bi-scissors"></i><a>Nosso Serviços</a></li>
+                            <li><i class="bi bi-people-fill"></i><a>Nossos Profissionais</a></li>
+                            <li><i class="bi bi-cup-hot-fill"></i><a>Nosso Ambiente</a></li>
+                            <li><i class="bi bi-bookmark-check-fill"></i><a>Nosso Compromisso</a></li>
+                        </ul>
+                    </div><!--coluna2-->
+
+                    <div class="coluna3 efeito-coluna3-footer">
+                        <div class="heading-footer"><i class="bi bi-alarm-fill"></i>Horários de atendimento</div>
+                        <ul>
+                            <li><i class="bi bi-calendar2-week"></i><a>Seg. a Sexta: 09h às 21h30</a></li>
+                            <li><i class="bi bi-calendar2-week"></i><a>Sábado: 09h às 17h30</a></li>
+                        </ul>
+                    </div><!--coluna3-->
+
+                    <div class="coluna4 efeito-coluna4-footer">
+                        <div class="heading-footer contato"><i class="bi bi-telephone-outbound-fill"></i>Contato</div>
+                        <ul>
+                            <li><i class="bi bi-geo-alt-fill"></i><a style="font-size: 10px;">Av. Universitária 3125 -
+                                    São Sebastião, Criciúma</a></li>
+                            <li><i class="bi bi-envelope-fill"></i><a>andbarbershop@gmail.com</a></li>
+                            <li><i class="bi bi-whatsapp"></i><a>+55 (48) 9644 - 3861</a></li>
+                        </ul>
+                    </div><!--coluna4-->
+
+                </div><!--top-footer-->
+
+                <div class="bottom-footer esconder-container">
+
+                    <div class="copy-text efeito-copy-footer">
+                        <a>Copyright ©2024 Todos direitos reservados para: <span>Guilherme e Lucas</span></a>
+                    </div>
+
+                    <div class="redes-icones">
+                        <div class="sub-heading-footer efeito-heading-redes-footer">Nossas Redes Sociais:</div>
+
+                        <div class="icones-bottom efeito-icones-footer">
+                            <ul>
+                                <li><a class="action" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                                <li><a class="action" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                                <li><a class="action" target="_blank"
+                                        href="https://www.instagram.com/andradebarber.shop/"><i
+                                            class="bi bi-instagram"></i></a></li>
+                                <li><a class="action" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                                <li><a class="action" target="_blank"><i class="bi bi-youtube"></i></a></li>
+                            </ul>
+                        </div><!--icones bottom-->
+
+                    </div><!--rede-icones-->
+
+                </div><!--bottom-footer-->
+
+            </div><!--interface-->
+        </footer>
+
     </main>
 
     <script src="./css/partials/header/header.js"></script>

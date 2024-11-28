@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,29 +11,27 @@
     <link rel="stylesheet" href="/css/pages/desktop/index.css">
     <link rel="stylesheet" href="/css/fonts/font-imports.css">
 
-    <link rel="stylesheet" href="/css/buttons/btns-home.css">
-    <link rel="stylesheet" href="/css/buttons/btns-form.css">
-    <link rel="stylesheet" href="/css/buttons/btn-google.css">
-
-    <link rel="stylesheet" href="/css/animations/animations-img.css">
     <link rel="stylesheet" href="/css/animations/animations-txt.css">
+    <link rel="stylesheet" href="/css/buttons/btns-form.css">
 
-    <link rel="stylesheet" href="/css/pages/desktop/login-usuario.css">
-    <link rel="stylesheet" href="/css/pages/responsivo/resp-login-usuario.css">
+    <link rel="stylesheet" href="/css/partials/campo-senha/criterios.css">
+    <link rel="stylesheet" href="/css/pages/desktop/cadastro-usuario.css">
+    <link rel="stylesheet" href="/css/pages/responsivo/resp-cadastro-usuario.css">
 
     <script src="/css/partials/header/menu-mobile.js" defer></script>
     <script src="/css/buttons/btn-loading.js" defer></script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/css/partials/reveal/reveal.js" defer></script>
-    <title>Login - And Barbershop</title>
+    <title>Cadastro de Usuário - And Barbershop</title>
 </head>
+
 <body>
-    
     <link rel="stylesheet" href="/css/partials/header/main-header.css">
     <link rel="stylesheet" href="/css/partials/header/menu-mobile.css">
     <link rel="stylesheet" href="/css/partials/header/info-conta.css">
 
+    <!--EXPORTAR A NAV-->
     <header id="header">
         <div class="interface">
 
@@ -49,7 +48,8 @@
                     <li><a href="#"><i class="bi bi-scissors"></i>Nossos Serviços</a></li>
                     <li><a href="#"><i class="bi bi-chat-square-text-fill"></i>Feedbacks</a></li>
                     <li><a href="#"><i class="bi bi-journal-bookmark-fill"></i>Planos e Assinaturas</a></li>
-                    <li><a href="/pages/agendamento/escolha-servico.html"><i class="bi bi-journal-check"></i>Agende Aqui</a></li>
+                    <li><a href="/pages/agendamento/escolha-servico.html"><i class="bi bi-journal-check"></i>Agende
+                            Aqui</a></li>
                 </ul>
             </nav>
 
@@ -84,8 +84,10 @@
                         <li><a href="#sec-sobre"><i class="bi bi-person-lines-fill"></i>Nosso Atendimento</a></li>
                         <li><a href="#sec-servicos"><i class="bi bi-scissors"></i>Nossos Serviços</a></li>
                         <li><a href="#sec-feed"><i class="bi bi-chat-square-text-fill"></i>Feedbacks</a></li>
-                        <li><a href="#sec-planos"><i class="bi bi-journal-bookmark-fill"></i>Planos e Assinaturas</a></li>
-                        <li><a href="/pages/agendamento/escolha-servico.html"><i class="bi bi-journal-check"></i>Agende Aqui</a></li>
+                        <li><a href="#sec-planos"><i class="bi bi-journal-bookmark-fill"></i>Planos e Assinaturas</a>
+                        </li>
+                        <li><a href="/pages/agendamento/escolha-servico.html"><i class="bi bi-journal-check"></i>Agende
+                                Aqui</a></li>
                     </ul>
                 </nav>
 
@@ -106,52 +108,59 @@
                     <div class="container efeito-container-form">
 
                         <div class="text-img efeito-txt-img">
-                            <a class="title">LOGIN DE</a><br>
+                            <a class="title">CADASTRO DE</a><br>
                             <a class="subtitle">USUÁRIO</a>
-                            <img class="img-form" src="/css/imgs/elementos/icon_user2.png" alt="icon2">
+                            <img class="img-icon" src="/css/imgs/elementos/tubo_barber2.png" alt="icon1">
                         </div>
-                        <div class="form-container">
-                            <div class="heading efeito-heading-form">
-                                <h1>Realize seu Login</h1>
-                                <h6>Novo por aqui?&nbsp;<a href="/pages/cadastro/cadastro-usuario.html">Cadastrar</a></h6><br>
-                            </div><br>
 
-                            <form class="form" action="/pages/minha-conta.html">
+                        <div class="form-container">
+                            <div class="heading efeito-heading-form">Realizar Cadastro</div><br>
+
+                            <form class="form" action="/pages/minha-conta.html" method="POST">
 
                                 <div class="input-field efeito-input1-form">
-                                    <input autofocus required="" autocomplete="off" type="email" name="email" id="email" />
-                                    <label for="email">Email</label>
+                                    <input required="" autocomplete="off" type="text" name="nome" id="nome" />
+                                    <label for="nome">Nome</label>
                                 </div>
 
                                 <div class="input-field efeito-input2-form">
+                                    <input required="" autocomplete="off" type="text" name="sobrenome" id="sobrenome" />
+                                    <label for="sobrenome">Sobrenome</label>
+                                </div>
+
+                                <div class="input-field efeito-input3-form">
+                                    <input required="" autocomplete="off" type="email" name="email" id="email" />
+                                    <label for="email">Email</label>
+                                </div>
+
+                                <div class="input-field efeito-input4-form">
                                     <input required="" autocomplete="off" type="password" name="senha" id="senha" />
                                     <label for="senha">Senha</label>
-                                    <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
                                 </div>
 
-                                    <h6 class="txt-esquecer efeito-esquecer-login">Esqueceu sua senha?&nbsp;<a href="/pages/recuperar-senha.html">Recuperar agora</a></h6>
-
-                                <div class="btn-container efeito-btn1-form">
-                                    <button id="btn-com-loading" class="btn" type="submit" onclick="handClick()" style="padding: 5px 10%; text-transform: capitalize;">Realizar Login</button>
+                                <div class="criterios-senha efeito-criterio-form" id="password-criteria"
+                                    style="width: 100%; margin: 0px;">
+                                    <a id="tamanho-senha" class="invalid"><i class="bi bi-x-circle"></i>Mínimo de 8
+                                        caracteres</a>
+                                    <a id="caixalta-senha" class="invalid"><i class="bi bi-x-circle"></i>Pelo menos
+                                        uma letra maiúscula</a>
+                                    <a id="numero-senha" class="invalid"><i class="bi bi-x-circle"></i>Pelo menos um
+                                        número</a>
+                                    <a id="especial-senha" class="invalid"><i class="bi bi-x-circle"></i>Pelo menos
+                                        um caractere especial (!@#$%^&*)</a>
                                 </div>
 
-                                <div class="divisao efeito-divisao-form">
-                                    <hr><h1>ou</h1><hr>
+                                <div class="btn-container efeito-btn-form">
+                                    <button id="btn-com-loading" class="btn" type="submit"
+                                        onclick="handClick()">Cadastrar</button>
                                 </div>
-
-                                <div class="btn-container efeito-btn1-form">
-                                    <a href="/pages/minha-conta.html">
-                                        <button id="btn-google" class="btn-google" type="button" onclick="handleClick()"><img src="/css/imgs/icones/logo-google.png" alt="logo-google">Continuar com o Google</button>
-                                    </a>
-                                </div>    
-                                
                             </form>
-                        </div>
+                        </div><!--form-container-->
 
-                        </div><!--container-->
+                    </div><!--container-->
 
                 </div><!--flex-->
-            </div><!--interface--> 
+            </div><!--interface-->
         </section>
 
         <link rel="stylesheet" href="/css/partials/footer/main-footer.css">
@@ -159,21 +168,21 @@
 
         <footer class="main-footer">
             <div class="interface">
-    
+
                 <div class="top-footer esconder-container">
-    
+
                     <div class="coluna1 efeito-coluna1-footer">
                         <div class="logo">
                             <img src="/css/imgs/logo/logo-png.png" alt="logo-nav">
                         </div><!--logo-->
-    
+
                         <div class="text-logo">
                             <h5>And Barbershop combina estilo e tradição em um ambiente acolhedor e sofisticado. Com
                                 cortes modernos, barbas impecáveis e atendimento personalizado, proporcionamos uma
                                 experiência única para quem valoriza qualidade e elegância.</h5>
                         </div>
                     </div><!--coluna1-->
-    
+
                     <div class="coluna2 efeito-coluna2-footer">
                         <div class="heading-footer barbearia"><i class="bi bi-house-fill"></i>Nossa Barbearia</div>
                         <ul>
@@ -183,7 +192,7 @@
                             <li><i class="bi bi-bookmark-check-fill"></i><a>Nosso Compromisso</a></li>
                         </ul>
                     </div><!--coluna2-->
-    
+
                     <div class="coluna3 efeito-coluna3-footer">
                         <div class="heading-footer"><i class="bi bi-alarm-fill"></i>Horários de atendimento</div>
                         <ul>
@@ -191,7 +200,7 @@
                             <li><i class="bi bi-calendar2-week"></i><a>Sábado: 09h às 17h30</a></li>
                         </ul>
                     </div><!--coluna3-->
-    
+
                     <div class="coluna4 efeito-coluna4-footer">
                         <div class="heading-footer contato"><i class="bi bi-telephone-outbound-fill"></i>Contato</div>
                         <ul>
@@ -201,18 +210,18 @@
                             <li><i class="bi bi-whatsapp"></i><a>+55 (48) 9644 - 3861</a></li>
                         </ul>
                     </div><!--coluna4-->
-    
+
                 </div><!--top-footer-->
-    
+
                 <div class="bottom-footer esconder-container">
-    
+
                     <div class="copy-text efeito-copy-footer">
                         <a>Copyright ©2024 Todos direitos reservados para: <span>Guilherme e Lucas</span></a>
                     </div>
-    
+
                     <div class="redes-icones">
                         <div class="sub-heading-footer efeito-heading-redes-footer">Nossas Redes Sociais:</div>
-    
+
                         <div class="icones-bottom efeito-icones-footer">
                             <ul>
                                 <li><a class="action" target="_blank"><i class="bi bi-facebook"></i></a></li>
@@ -224,18 +233,118 @@
                                 <li><a class="action" target="_blank"><i class="bi bi-youtube"></i></a></li>
                             </ul>
                         </div><!--icones bottom-->
-    
+
                     </div><!--rede-icones-->
-    
+
                 </div><!--bottom-footer-->
-    
+
             </div><!--interface-->
         </footer>
 
     </main>
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        const mascaraTel = (event) => {
+            let input = event.target
+            input.value = phoneMask(input.value)
+        }
+
+        const phoneMask = (value) => {
+            if (!value) return ""
+            value = value.replace(/\D/g, '')
+            value = value.replace(/(\d{2})(\d)/, "($1) $2")
+            value = value.replace(/(\d)(\d{4})$/, "$1-$2")
+            return value
+
+            var tam = value.length;
+        }
+
+        $(document).ready(function () {
+            $('#cpf').mask('999.999.999-99');
+            $('#dataNasc').mask('99/99/9999');
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const imageInput = document.getElementById('imageInput');
+            const preview = document.getElementById('preview');
+
+            imageInput.addEventListener('change', (e) => {
+                const file = e.target.files[0];
+
+                if (file && file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+
+                    reader.onload = (e) => {
+                        preview.src = e.target.result;
+                        preview.style.display = 'block'; // Exibe o preview da imagem
+                    };
+
+                    reader.readAsDataURL(file);
+                } else {
+                    preview.src = '';
+                    preview.style.display = 'none'; // Oculta o preview se nenhum arquivo válido for selecionado
+                }
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const passwordInput = document.getElementById("senha");
+            const submitButton = document.getElementById("btn-com-loading");
+
+            const criterio = {
+                length: document.getElementById("tamanho-senha"),
+                uppercase: document.getElementById("caixalta-senha"),
+                number: document.getElementById("numero-senha"),
+                special: document.getElementById("especial-senha")
+            };
+
+            const validatePassword = () => {
+                const password = passwordInput.value;
+
+                const validations = {
+                    length: password.length >= 8,
+                    uppercase: /[A-Z]/.test(password),
+                    number: /\d/.test(password),
+                    special: /[!@#$%^&*]/.test(password)
+                };
+
+
+                Object.keys(validations).forEach(key => {
+                    const icon = criterio[key].querySelector("i");
+                    if (validations[key]) {
+                        criterio[key].classList.add("valid");
+                        criterio[key].classList.remove("invalid");
+                        icon.className = "bi bi-check-circle"; // Ícone de sucesso
+                    } else {
+                        criterio[key].classList.add("invalid");
+                        criterio[key].classList.remove("valid");
+                        icon.className = "bi bi-x-circle"; // Ícone de erro
+                    }
+                });
+
+                const tudovalido = Object.values(validations).every(Boolean);
+                submitButton.disabled = !tudovalido;
+            };
+
+            passwordInput.addEventListener("input", validatePassword);
+
+            submitButton.disabled = true;
+        });
+    </script>
+
     <script src="/css/partials/header/header.js"></script>
-    <script src="/css/partials/campo-senha/campo-senha.js"></script>
-    
 </body>
+
 </html>
