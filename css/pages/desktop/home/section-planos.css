@@ -1,6 +1,6 @@
 .sec-planos{
     min-height: 110vh;
-    background-image: url("/css/imgs/background/background-manager.png");
+    background-image: url("../../../imgs/background/background-manager.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

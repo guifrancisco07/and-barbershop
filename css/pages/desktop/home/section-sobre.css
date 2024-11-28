@@ -1,6 +1,6 @@
 .sec-sobre {
     min-height: 100vh;
-    background-image: url("/css/imgs/background/background-feedback2.png");
+    background-image: url("../../../imgs/background/background-feedback2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

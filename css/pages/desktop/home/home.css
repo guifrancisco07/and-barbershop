@@ -1,7 +1,7 @@
 .topo-do-site{
     min-height: 100vh;
     width: 100%;
-    background-image: url("/css/imgs/background/background-home.png");
+    background-image: url("../../../imgs/background/background-home.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
