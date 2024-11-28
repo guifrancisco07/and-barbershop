@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="./../css/imgs/logo/aba-logo-and.png" sizes="16x16">
+
+    <link rel="stylesheet" href="./../css/pages/desktop/index.css">
+    <link rel="stylesheet" href="./../css/fonts/font-imports.css">
+
+    <link rel="stylesheet" href="./../css/buttons/btns-home.css">
+    <link rel="stylesheet" href="./../css/buttons/btns-form.css">
+    <link rel="stylesheet" href="./../css/buttons/btn-google.css">
+
+    <link rel="stylesheet" href="./../css/animations/animations-img.css">
+    <link rel="stylesheet" href="./../css/animations/animations-txt.css">
+
+    <link rel="stylesheet" href="./../css/pages/desktop/login-usuario.css">
+    <link rel="stylesheet" href="./../css/pages/responsivo/resp-login-usuario.css">
+
+    <script src="./../css/partials/header/menu-mobile.js" defer></script>
+    <script src="./../css/buttons/btn-loading.js" defer></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./../css/partials/reveal/reveal.js" defer></script>
+    <title>Login - And Barbershop</title>
+</head>
+<body>
+    
+    <link rel="stylesheet" href="./../css/partials/header/main-header.css">
+    <link rel="stylesheet" href="./../css/partials/header/menu-mobile.css">
+    <link rel="stylesheet" href="./../css/partials/header/info-conta.css">
+
+    <header id="header">
+        <div class="interface">
+
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="./../css/imgs/logo/logo-png.png" alt="logo-nav">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="#">SOBRE</a></li>
+                    <li><a href="#">PLANOS E ASSINATURAS</a></li>
+                    <li><a href="./agendamento/escolha-servico.html">AGENDAR AQUI</a></li>
+                </ul>
+            </nav>
+
+            <div class="info-conta">
+                <div class="flex">
+
+                    <div class="img-conta">
+                        <img src="./../css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
+                    </div>
+
+                    <div class="txt-conta">
+                        <a class="href" href="./cadastro/cadastro-usuario.html">Cadastrar-se Agora</a>
+                        <hr>
+                        <a class="href" href="./login-usuario.html">Realizar Login</a>
+                    </div>
+
+                </div><!--flex-->
+            </div><!--info-conta-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="/index.html"><i class="bi bi-house-door-fill"></i>Home</a></li>
+                        <li><a href="#sec-sobre"><i class="bi bi-person-lines-fill"></i>Nosso Atendimento</a></li>
+                        <li><a href="#sec-servicos"><i class="bi bi-scissors"></i>Nossos Serviços</a></li>
+                        <li><a href="#sec-feed"><i class="bi bi-chat-square-text-fill"></i>Feedbacks</a></li>
+                        <li><a href="#sec-planos"><i class="bi bi-journal-bookmark-fill"></i>Planos e Assinaturas</a></li>
+                        <li><a href="/pages/agendamento/escolha-servico.html"><i class="bi bi-journal-check"></i>Agende Aqui</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+        </div><!--interface-->
+    </header>
+    <!--EXPORTAR A NAV-->
+
+    <main>
+
+        <section class="fundo-section">
+            <div class="interface">
+                <div class="flex">
+
+                    <div class="container efeito-container-form">
+
+                        <div class="text-img efeito-txt-img">
+                            <a class="title">LOGIN DE</a><br>
+                            <a class="subtitle">USUÁRIO</a>
+                            <img class="img-form" src="./../css/imgs/elementos/icon_user2.png" alt="icon2">
+                        </div>
+                        <div class="form-container">
+                            <div class="heading efeito-heading-form">
+                                <h1>Realize seu Login</h1>
+                                <h6>Novo por aqui?&nbsp;<a href="./cadastro/cadastro-usuario.html">Cadastrar</a></h6><br>
+                            </div><br>
+
+                            <form class="form" action="./minha-conta.html">
+
+                                <div class="input-field efeito-input1-form">
+                                    <input autofocus required="" autocomplete="off" type="email" name="email" id="email" />
+                                    <label for="email">Email</label>
+                                </div>
+
+                                <div class="input-field efeito-input2-form">
+                                    <input required="" autocomplete="off" type="password" name="senha" id="senha" />
+                                    <label for="senha">Senha</label>
+                                    <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+                                </div>
+
+                                    <h6 class="txt-esquecer efeito-esquecer-login">Esqueceu sua senha?&nbsp;<a href="/pages/recuperar-senha.html">Recuperar agora</a></h6>
+
+                                <div class="btn-container efeito-btn1-form">
+                                    <button id="btn-com-loading" class="btn" type="submit" onclick="handClick()" style="padding: 5px 10%; text-transform: capitalize;">Realizar Login</button>
+                                </div>
+
+                                <div class="divisao efeito-divisao-form">
+                                    <hr><h1>ou</h1><hr>
+                                </div>
+
+                                <div class="btn-container efeito-btn1-form">
+                                    <a href="./minha-conta.html">
+                                        <button id="btn-google" class="btn-google" type="button" onclick="handleClick()"><img src="./../css/imgs/icones/logo-google.png" alt="logo-google">Continuar com o Google</button>
+                                    </a>
+                                </div>    
+                                
+                            </form>
+                        </div>
+
+                        </div><!--container-->
+
+                </div><!--flex-->
+            </div><!--interface--> 
+        </section>
+
+        <link rel="stylesheet" href="./../css/partials/footer/main-footer.css">
+        <link rel="stylesheet" href="./../css/partials/footer/resp-main-footer.css">
+
+        <footer class="main-footer">
+            <div class="interface">
+    
+                <div class="top-footer esconder-container">
+    
+                    <div class="coluna1 efeito-coluna1-footer">
+                        <div class="logo">
+                            <img src="./../css/imgs/logo/logo-png.png" alt="logo-nav">
+                        </div><!--logo-->
+    
+                        <div class="text-logo">
+                            <h5>And Barbershop combina estilo e tradição em um ambiente acolhedor e sofisticado. Com
+                                cortes modernos, barbas impecáveis e atendimento personalizado, proporcionamos uma
+                                experiência única para quem valoriza qualidade e elegância.</h5>
+                        </div>
+                    </div><!--coluna1-->
+    
+                    <div class="coluna2 efeito-coluna2-footer">
+                        <div class="heading-footer barbearia"><i class="bi bi-house-fill"></i>Nossa Barbearia</div>
+                        <ul>
+                            <li><i class="bi bi-scissors"></i><a>Nosso Serviços</a></li>
+                            <li><i class="bi bi-people-fill"></i><a>Nossos Profissionais</a></li>
+                            <li><i class="bi bi-cup-hot-fill"></i><a>Nosso Ambiente</a></li>
+                            <li><i class="bi bi-bookmark-check-fill"></i><a>Nosso Compromisso</a></li>
+                        </ul>
+                    </div><!--coluna2-->
+    
+                    <div class="coluna3 efeito-coluna3-footer">
+                        <div class="heading-footer"><i class="bi bi-alarm-fill"></i>Horários de atendimento</div>
+                        <ul>
+                            <li><i class="bi bi-calendar2-week"></i><a>Seg. a Sexta: 09h às 21h30</a></li>
+                            <li><i class="bi bi-calendar2-week"></i><a>Sábado: 09h às 17h30</a></li>
+                        </ul>
+                    </div><!--coluna3-->
+    
+                    <div class="coluna4 efeito-coluna4-footer">
+                        <div class="heading-footer contato"><i class="bi bi-telephone-outbound-fill"></i>Contato</div>
+                        <ul>
+                            <li><i class="bi bi-geo-alt-fill"></i><a style="font-size: 10px;">Av. Universitária 3125 -
+                                    São Sebastião, Criciúma</a></li>
+                            <li><i class="bi bi-envelope-fill"></i><a>andbarbershop@gmail.com</a></li>
+                            <li><i class="bi bi-whatsapp"></i><a>+55 (48) 9644 - 3861</a></li>
+                        </ul>
+                    </div><!--coluna4-->
+    
+                </div><!--top-footer-->
+    
+                <div class="bottom-footer esconder-container">
+    
+                    <div class="copy-text efeito-copy-footer">
+                        <a>Copyright ©2024 Todos direitos reservados para: <span>Guilherme e Lucas</span></a>
+                    </div>
+    
+                    <div class="redes-icones">
+                        <div class="sub-heading-footer efeito-heading-redes-footer">Nossas Redes Sociais:</div>
+    
+                        <div class="icones-bottom efeito-icones-footer">
+                            <ul>
+                                <li><a class="action" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                                <li><a class="action" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                                <li><a class="action" target="_blank"
+                                        href="https://www.instagram.com/andradebarber.shop/"><i
+                                            class="bi bi-instagram"></i></a></li>
+                                <li><a class="action" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                                <li><a class="action" target="_blank"><i class="bi bi-youtube"></i></a></li>
+                            </ul>
+                        </div><!--icones bottom-->
+    
+                    </div><!--rede-icones-->
+    
+                </div><!--bottom-footer-->
+    
+            </div><!--interface-->
+        </footer>
+
+    </main>
+    
+    <script src="./../css/partials/header/header.js"></script>
+    <script src="./../css/partials/campo-senha/campo-senha.js"></script>
+    
+</body>
+</html>
