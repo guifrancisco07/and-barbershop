@@ -1,4 +1,4 @@
-header .btn-agendar-header button{
+.btn-agendar-header{
     width: 120px;
     height: 35px;
     border: 0;
@@ -12,8 +12,8 @@ header .btn-agendar-header button{
     cursor: pointer;
 }
 
-header .btn-agendar-header button:hover{
-    box-shadow: 0px 0px 8px #b66f43;
+.btn-agendar-header:hover{
+    box-shadow: 0px 0px 8px #9c603b;
     background-color: #d0804e;
     color: #fff;
 

@@ -6,8 +6,12 @@
   background-size: cover;
 }
 
+.efeito-container-form{
+  visibility: hidden;
+}
+
 section.fundo-section .flex{
-  min-height: 100vh;
+  min-height: 110vh;
   align-items: center;
   justify-content: center;
   background-position-x: 0%;
@@ -15,8 +19,10 @@ section.fundo-section .flex{
 }
 
 .fundo-section .container{
-  height: 510px;
-  width: 1000px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  height: 480px;
+  width: 75%;
   
   border-radius: 15px;
   background-color: rgba(29, 27, 26, 50%);
@@ -76,7 +82,7 @@ section.fundo-section .flex{
 }
 
 .lista-servico {
-  max-height: 500px;
+  max-height: 480px;
   width: 1000px;
   border-radius: 15px;
 

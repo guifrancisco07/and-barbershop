@@ -1,8 +1,10 @@
 .btn-agendar-agora {
     background-color: #b66f43;
-    color: #f7d2a9;
+    color: #1d1b1a;
     font-family: Espiritu;
     font-size: 12px;
+
+    margin: 0px 10px 0px 0px;
 
     top: 0px;
     border: 0;
@@ -13,8 +15,47 @@
 
 .btn-agendar-agora:hover {
     background-color: #d0804e;
-    color: #ffffff;
 
+    transform: scale(1.02);
     cursor: pointer;
     transition: .2s;
+}
+
+.btn-agendar-agora i{
+    margin-right: 5px;
+}
+
+.btn {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Espiritu;
+    cursor: pointer;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 5px 8%;
+    position: relative;
+  
+    border-radius: 10px;
+    border: solid 1px #a3643c;
+    border-bottom: solid 3px #774a2e;
+    background: linear-gradient(180deg, #d0804e, #8d5735);
+  
+    transition: .3s;
+    box-shadow: 0px 2px 3px #000d3848, inset 0px 4px 5px #aa683f,
+      inset 0px -4px 5px #8d5735;
+}
+
+.btn:hover{
+    transform: scale(1.02);
+    
+    background: linear-gradient(180deg, #ce7d4b, #7e4d2e);
+    border: solid 1.4px #885434;
+    border-bottom: solid 3px #7e4d2e;
+    box-shadow: 0px 0px 10px #462b1b;
 }

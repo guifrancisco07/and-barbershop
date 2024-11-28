@@ -6,7 +6,7 @@
   background-size: cover;
 }
 
-section.fundo-section .flex{
+section.fundo-section .flex {
   min-height: 110vh;
   align-items: center;
   justify-content: center;
@@ -14,14 +14,18 @@ section.fundo-section .flex{
   overflow: hidden;
 }
 
+.efeito-container-form {
+  visibility: hidden;
+}
+
 .fundo-section .container {
-  height: 520px;
+  height: auto;
   width: 1000px;
-  
+
   background-color: rgba(9, 28, 29, 50%);
   backdrop-filter: blur(2px);
   border-radius: 25px;
-  
+
   display: flex;
   align-items: center;
 }
@@ -36,7 +40,7 @@ section.fundo-section .flex{
 
   line-height: 1.8em;
 
-  animation: aparecer-img-txt1 .7s ease-out alternate;
+  /*animation: aparecer-img-txt1 .7s ease-out alternate;*/
 }
 
 .title {
@@ -75,7 +79,9 @@ section.fundo-section .flex{
 }
 
 .form-container {
-  background-color: transparent /*var(--main-bg-color)*/;
+  background-color: transparent
+    /*var(--main-bg-color)*/
+  ;
 
   border-radius: 20px;
   width: 35%;
@@ -85,15 +91,47 @@ section.fundo-section .flex{
   left: 10%;
   top: 0;
 
-  animation: aparecer-form .5s ease-out alternate;
+  /*animation: aparecer-form .5s ease-out alternate;*/
 }
 
-.form-container .heading {
+.form-container .txt-esquecer {
+  width: 100%;
+
+  color: #b4936d;
+  font-size: 12px;
+  font-weight: 100;
+  font-family: Espiritu;
+  text-align: center;
+
+  display: inline;
+}
+
+.form-container .txt-esquecer a {
+  font-size: 12px;
+  color: #f7d2a9;
+}
+
+.heading h1 {
   color: #b4936d;
   font-size: 35px;
   font-weight: bolder;
   font-family: Espiritu Cond;
   text-align: center;
+}
+
+.heading h6 {
+  color: #b4936d;
+  font-size: 12px;
+  font-weight: 100;
+  font-family: Espiritu;
+  text-align: center;
+}
+
+.heading a {
+  color: #f7d2a9;
+  font-weight: 100;
+  font-family: Espiritu;
+  text-decoration: none;
 }
 
 .form {
@@ -107,11 +145,32 @@ section.fundo-section .flex{
 .form .btn-container {
   width: 300px;
   height: 50px;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+.form .divisao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divisao hr {
+  background-color: #f7d2a9;
+  height: 2px;
+  border: 0;
+  border-radius: 10px;
+  width: 120px;
+}
+
+.divisao h1 {
+  font-family: Poppins-Light;
+  font-size: 12px;
+  color: #f7d2a9;
+  margin: 0 4%;
 }
 
 .form h6 {
@@ -122,7 +181,7 @@ section.fundo-section .flex{
   text-align: start;
 }
 
-.form a{
+.form a {
   font-family: Espiritu;
   font-weight: normal;
   text-decoration: none;
@@ -132,6 +191,21 @@ section.fundo-section .flex{
 
 .input-field {
   position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-field i {
+  position: absolute;
+  right: 15px;
+  color: #b4936d;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.bi.bi-eye-slash-fill {
+  color: #997d5d;
 }
 
 .input-field label {
@@ -142,7 +216,7 @@ section.fundo-section .flex{
   pointer-events: none;
   background-color: transparent;
   left: 15px;
-  transform: translateY(0.6rem);
+  transform: translateY(0rem);
   transition: all 0.3s ease;
 }
 
@@ -167,7 +241,7 @@ section.fundo-section .flex{
 
 .input-field input:focus~label,
 .input-field input:valid~label {
-  transform: translateY(-51%) translateX(-10px) scale(0.8);
+  transform: translateY(-100%) translateX(-10px) scale(0.8);
   background-color: #ffca8d;
   padding: 0px 5px;
   color: #0d2829;

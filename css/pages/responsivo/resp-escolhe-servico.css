@@ -1,4 +1,4 @@
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1240px) {
 
   /* CLASSES GERAIS */
   section.fundo-section .flex{
@@ -10,7 +10,7 @@
   .fundo-section .container {
     margin-top: 5%;
     height: 500px;
-    width: auto;
+    width: 60%;
 
     flex-direction: column;
     justify-content: center;
@@ -63,7 +63,7 @@
   .lista-servico {
     margin-top: 25px;
     max-height: 500px;
-    width: 250px;
+    width: 100%;
     border-radius: 15px;
 
     align-items: center;
@@ -75,7 +75,7 @@
 
   .element {
     height: 80px;
-    width: 220px;
+    width: 90%;
     margin: 10px;
     border-radius: 12px;
   }

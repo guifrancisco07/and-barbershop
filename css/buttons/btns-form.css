@@ -1,5 +1,5 @@
-.form .btn {
-  color: #ffffff;
+.btn {
+  color: #fff;
   font-size: 15px;
   text-transform: uppercase;
   text-align: center;
@@ -7,22 +7,145 @@
   font-family: Espiritu;
   cursor: pointer;
 
-  width: 40%;
-  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px 8%;
   position: relative;
 
   border-radius: 10px;
   border: solid 1px #a3643c;
   border-bottom: solid 3px #774a2e;
-  background: linear-gradient(135deg, #d0804e, #8d5735);
+  background: linear-gradient(180deg, #d0804e, #8d5735);
 
-  transition: all 0.2s ease;
+  transition: .3s;
   box-shadow: 0px 2px 3px #000d3848, inset 0px 4px 5px #aa683f,
     inset 0px -4px 5px #8d5735;
 }
 
-.form .btn:active {
+.btn:hover{
+  transform: scale(1.02);
+  
+  background: linear-gradient(180deg, #ce7d4b, #7e4d2e);
+  border: solid 1.4px #885434;
+  border-bottom: solid 3px #7e4d2e;
+  box-shadow: 0px 0px 10px #462b1b;
+}
+
+.btn:active {
+  background: linear-gradient(180deg, #b66f43, #8a5432);
+  box-shadow: inset 0px 4px 5px #b97144, inset 0px -4px 5px #8a5432;
+}
+
+.btn.loading{
+  transition: .3s;
+  color: #ffffff00;
+}
+
+.btn.loading:hover{
+  transition: .3s;
+  color: #ffffff00;
+}
+
+.btn.loading::after{
+  position: absolute;
+
+  content: '';
+  width: 12px;
+  height: 12px;
+
+  border-radius: 100%;
+  border: solid 2px transparent;
+  border-left-color: #fff;
+
+  animation: spinner .7s linear infinite;
+}
+
+.btn-confirma {
+  color: #33302e;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: Espiritu;
+  cursor: pointer;
+
+  width: 180px;
+  height: 50px;
+  padding: 5px;
+  position: relative;
+
+  border-radius: 15px;
+  border: solid 1px #a3643c;
+  border-bottom: solid 3px #774a2e;
+  background: linear-gradient(180deg, #d0804e, #8d5735);
+
+  transition: all 0.2s ease;
+  box-shadow: 0px 0px 10px #573522;
+}
+
+.btn-confirma:hover {
+  transform: scale(1.02);
+    
+  color: #1d1b1a;
+  background: linear-gradient(180deg, #ce7d4b, #7e4d2e);
+  border: solid 1.4px #885434;
+  border-bottom: solid 3px #7e4d2e;
+  box-shadow: 0px 0px 10px #462b1b;
+}
+
+.btn-confirma:active {
   font-size: 14.5px;
-  box-shadow: inset 0px 4px 5px #8f5937, inset 0px -4px 5px #774a2e;
+  box-shadow: inset 0px 4px 5px #b97144, inset 0px -4px 5px #8a5432;
+  transform: scale(1.02);
+}
+
+.btn-confirma:disabled{
+  background: #5151515d;
+  box-shadow: 0px 0px 5px #adadad;
+  color: #adadad;
+  border: solid 1px #fff;
+  cursor: not-allowed;
+}
+
+.btn-infos i{
+  margin-right: 5px;
+}
+
+.btn-infos {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: Espiritu;
+  font-weight: 10;
+  cursor: pointer;
+
+  width: 80%;
+  padding: 5px 4%;
+  position: relative;
+
+  border-radius: 10px;
+  border: solid 1px #a3643c;
+  border-bottom: solid 3px #774a2e;
+  background: linear-gradient(180deg, #ce7d4b, #7e4d2e);
+
+  transition: .3s;
+  box-shadow: 0px 2px 3px #000d3848, inset 0px 4px 5px #aa683f,
+    inset 0px -4px 5px #8d5735;
+}
+
+.btn-infos:hover {
+  background: transparent;
+  color: #ce7d4b;
+  box-shadow: 0px 2px 3px #000d3848, inset 0px 2px 2px #aa683f,
+    inset 0px -2px 2px #8d5735;
+  border-bottom: solid 3px #a3643c;
+}
+
+.btn-infos:active {
+  box-shadow: inset 0px 4px 5px #aa683f, inset 0px -4px 5px #8d5735;
   transform: scale(1.05);
 }

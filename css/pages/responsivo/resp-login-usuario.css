@@ -1,21 +1,28 @@
 @media screen and (max-width: 960px) {
 
+  .fundo-section{
+    min-height: 120vh;
+  }
+
   /* CLASSES GERAIS */
   section.fundo-section .flex{
-    min-height: 100vh;
+    height: 120vh;
     flex-direction: column;
     background-position-x: 53%;
     gap: 20px;
   }
 
   .fundo-section .container{
-    margin-top: 5%;
-    height: 500px;
+    height: 600px;
     width: auto;
     padding: 4px 6%;
 
     flex-direction: column;
     justify-content: center;
+    gap: 40px;
+
+    position: relative;
+    top: 40px;
   }
 
   /* IMG + TXT */
@@ -23,6 +30,7 @@
     height: 250px;
     width: 250px;
 
+    margin: 0;
     position: relative;
     left: 0;
     top: 0;
@@ -53,19 +61,26 @@
 
   /* FORM + BTN */
   .form-container {
-    height: 30vh;
+    height: 60%;
     width: 300px;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
     top: 0;
     left: 0;
-    padding: 40px 4%;
+    padding: 0px 4%;
   }
 
   .form-container .heading {
     display: none;
+  }
+
+  .input-field input {
+    font-size: 12px;
+
+    padding: 8px 12px;
+    width: 300px;
   }
 }

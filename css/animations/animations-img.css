@@ -53,12 +53,11 @@
 
 @keyframes aparecer-img-txt3{
     0% {
-        top: 100px;
+        transform: translateY(20px);
         opacity: 0%;
     }
 
     100% {
-        top: 70px;
         opacity: 100%;
     }
 }

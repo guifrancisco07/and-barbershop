@@ -1,0 +1,134 @@
+.btn-deletar {
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Espiritu;
+    cursor: pointer;
+  
+    width: 95px;
+    padding: 2px;
+    position: relative;
+  
+    border-radius: 10px;
+    border: solid 1px #a33c3c;
+    border-bottom: solid 3px #772e2e;
+    background: linear-gradient(135deg, #d04e4e, #8d3535);
+  
+    transition: all 0.2s ease;
+    box-shadow: 0px 2px 3px #000d3848, inset 0px 4px 5px #aa3f3f,
+      inset 0px -4px 5px #8d3535;
+  }
+  
+  .btn-deletar:hover {
+    color: #d04e4e;
+    border: solid 0.2px #d04e4e;
+    background: transparent;
+  
+    transition: all 0.2s ease;
+    box-shadow: 0px 2px 3px #000d3848, inset 0px 1px 2px #aa3f3f,
+    inset 0px -1px 2px #8d3535;
+  }
+
+  .btn-deletar:active {
+    box-shadow: inset 0px 4px 5px #8f3737, inset 0px -4px 5px #772e2e;
+    transform: scale(1.05);
+  }
+
+  .btn-editar i, .btn-deletar i{
+    margin-right: 3px;
+    position: relative;
+    top: -0.4px;
+  }
+
+  .btn-editar {
+    color: #3b3005;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Espiritu;
+    cursor: pointer;
+  
+    width: 90px;
+    padding: 2px;
+    position: relative;
+  
+    border-radius: 10px;
+    border: solid 1px #ffd738;
+    border-bottom: solid 3px #c7a82d;
+    background: linear-gradient(135deg, #ffce0b, #d2a800);
+  
+    transition: all 0.2s ease;
+    box-shadow: 0px 2px 3px #000d3848, inset 0px 4px 5px #ffd738,
+      inset 0px -4px 5px #d2a800;
+  }
+
+  .btn-editar:hover {
+    color: #ffce0b;
+    border: solid 0.2px #ffce0b;
+    background: transparent;
+  
+    transition: all 0.2s ease;
+    box-shadow: 0px 2px 3px #000d3848, inset 0px 1px 2px #ffd738,
+    inset 0px -1px 2px #d2a800;
+  }
+  
+  .btn-editar:active {
+    box-shadow: inset 0px 4px 5px #8f8037, inset 0px -4px 5px #77682e;
+    transform: scale(1.05);
+  }
+
+  .btn-finalizar {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Espiritu;
+    cursor: pointer;
+  
+    width: 110px;
+    padding: 4px 3%;
+    position: relative;
+  
+    border-radius: 10px;
+    border: solid 1px #47bd57;
+    border-bottom: solid 3px #399946;
+    background: linear-gradient(135deg, #40ac4e, #399946);
+  
+    transition: all 0.2s ease;
+    box-shadow: 0px 2px 3px #000d3848, inset 0px 4px 5px #44b854,
+      inset 0px -4px 5px #44b854;
+  }
+
+  button.btn-finalizar i{
+    margin-right: 5px;
+    position: relative;
+    top: -0.3px;
+    color: #fff;
+  }
+
+  .btn-finalizar:hover i{
+    color: #4ed05f;
+  }
+
+  .btn-finalizar:hover {
+    color: #4ed05f;
+    border: solid 0.2px #4ed05f;
+    background: transparent;
+  
+    transition: all 0.2s ease;
+    box-shadow: 0px 2px 3px #000d3848, inset 0px 1px 2px #59ff27,
+    inset 0px -1px 2px #4ed05f;
+  }
+
+  .btn-finalizar:active i{
+    color: #fff;
+  }
+  .btn-finalizar:active {
+    color: #fff;
+    box-shadow: inset 0px 2px 3px #4ed05f, inset 0px -2px 3px #4ed05f;
+    transform: scale(1.05);
+  }

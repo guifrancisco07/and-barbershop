@@ -12,6 +12,7 @@
 
 html {
     min-height: 100vh;
+    scroll-behavior: smooth;
     background-color: var(--main-bg-color);
 }
 
@@ -23,3 +24,7 @@ html {
 .flex{
     display: flex;
 }
+
+button{
+    outline: none;
+} /*so/

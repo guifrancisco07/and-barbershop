@@ -1,0 +1,112 @@
+@media screen and (max-width: 960px) {
+
+    /* CLASSES GERAIS */
+    .fundo-section{
+        min-height: 100vh;
+    }
+
+    section.fundo-section .flex{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    section.fundo-section .flex .txt-topo-site{
+        width: 100%;
+    }
+    
+    section.fundo-section .txt-topo-site{
+        margin-top: 25%;
+        margin-bottom: 2%;
+        width: 100%;
+        /*animation: opacidade-moviment 1s ease-out alternate;*/
+    }
+    
+    .txt-topo-site h1{
+        margin-left: 10%;
+        font-size: 3em;
+    }
+
+    .fundo-section .container{
+        padding: 20px 10%;
+        
+        height: auto;
+        width: 90%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .preview-img{
+        background-color: #000000de;
+    
+        height: 250px;
+        width: 250px;
+    
+        border: solid 5px #d0804e;
+        border-radius: 100%;
+    }
+
+    .form-esquerda label{
+        font-size: 12px;
+    
+        padding: 7px 3%;
+        width: 200px;
+        border-radius: 15px;
+    
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .form-direita hr{
+        display: block;
+        background-color: #f7d2a9;
+        height: 2px;
+        border: 0;
+        border-radius: 10px;
+        margin: 20px 0;
+        width: 90%;
+    }
+
+    /* FORM + BTN */
+    .heading {
+        font-size: 30px;
+        letter-spacing: 2px;
+        padding: 10px 0;
+    }
+
+    .heading.mobile{
+        margin-top: -1%;
+    }
+
+    table{
+        width: 90%;
+    }
+
+    .btn-container .btn{
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+        padding: 5px 1%;
+    }
+
+    .input-field label{
+        font-size: 12px;
+    }
+
+    .input-field .erro-msg{
+        max-width: 150px;
+        font-size: 10px;
+        position: relative;
+        left: 5%;
+    }
+
+    .input-field input {
+        font-size: 12px;
+        padding: 4px 15px;
+        width: 250px;
+    }
+}
