@@ -6,36 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="icon" href="/css/imgs/logo/aba-logo-and.png" sizes="16x16">
+    <link rel="icon" href="./css/imgs/logo/aba-logo-and.png" sizes="16x16">
 
-    <link rel="stylesheet" href="/css/pages/desktop/index.css">
-    <link rel="stylesheet" href="/css/fonts/font-imports.css">
-    <link rel="stylesheet" href="/css/buttons/btns-home.css">
-    <link rel="stylesheet" href="/css/buttons/btns-form.css">
+    <link rel="stylesheet" href="./css/pages/desktop/index.css">
+    <link rel="stylesheet" href="./css/fonts/font-imports.css">
+    <link rel="stylesheet" href="./css/buttons/btns-home.css">
+    <link rel="stylesheet" href="./css/buttons/btns-form.css">
 
-    <link rel="stylesheet" href="/css/animations/animations-txt.css">
+    <link rel="stylesheet" href="./css/animations/animations-txt.css">
 
-    <link rel="stylesheet" href="/css/pages/desktop/home/home.css">
-    <link rel="stylesheet" href="/css/pages/responsivo/resp-home.css">
+    <link rel="stylesheet" href="./css/pages/desktop/home/home.css">
+    <link rel="stylesheet" href="./css/pages/responsivo/resp-home.css">
 
-    <script src="/css/partials/header/menu-mobile.js" defer></script>
+    <script src="./css/partials/header/menu-mobile.js" defer></script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="/css/partials/reveal/reveal.js" defer></script>
+    <script src="./css/partials/reveal/reveal.js" defer></script>
     <title>Home - And Barbershop</title>
 </head>
 
 <body>
-    <link rel="stylesheet" href="/css/partials/header/main-header.css">
-    <link rel="stylesheet" href="/css/partials/header/menu-mobile.css">
-    <link rel="stylesheet" href="/css/partials/header/info-conta.css">
+    <link rel="stylesheet" href="./css/partials/header/main-header.css">
+    <link rel="stylesheet" href="./css/partials/header/menu-mobile.css">
+    <link rel="stylesheet" href="./css/partials/header/info-conta.css">
 
     <header id="header">
         <div class="interface">
 
             <div class="logo">
-                <a href="/">
-                    <img src="/css/imgs/logo/logo-png.png" alt="logo-nav">
+                <a href="./index.html">
+                    <img src="./css/imgs/logo/logo-png.png" alt="logo-nav">
                 </a>
             </div><!--logo-->
 
@@ -43,17 +43,17 @@
                 <ul>
                     <li><a href="#topo-do-site">HOME</a></li>
 
-                <li class="dropdown">
-                    <a id="sobre-link" href="#sec-sobre">SOBRE<i class="bi bi-caret-down-fill"></i></a>
+                    <li class="dropdown">
+                        <a id="sobre-link" href="#sec-sobre">SOBRE<i class="bi bi-caret-down-fill"></i></a>
 
-                    <div class="dropdown-menu">
-                        <a href="#sec-sobre">ATENDIMENTO</a>
-                        <a href="#sec-servicos">SERVIÇOS</a>
-                        <a href="#sec-feed">FEEDBACKS</a>
-                    </div>
-                </li>
-                <li><a href="#sec-planos">PLANOS E ASSINATURAS</a></li>
-                <li><a href="/agendamentos">AGENDE AQUI</a></li>
+                        <div class="dropdown-menu">
+                            <a href="#sec-sobre">ATENDIMENTO</a>
+                            <a href="#sec-servicos">SERVIÇOS</a>
+                            <a href="#sec-feed">FEEDBACKS</a>
+                        </div>
+                    </li>
+                    <li><a href="#sec-planos">PLANOS E ASSINATURAS</a></li>
+                    <li><a href="./pages/agendamento/escolha-servico.html">AGENDE AQUI</a></li>
                 </ul>
             </nav>
 
@@ -61,13 +61,13 @@
                 <div class="flex">
 
                     <div class="img-conta">
-                        <img src="/css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
+                        <img src="./css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
                     </div>
 
                     <div class="txt-conta">
-                        <a class="href" href="/pages/cadastro/cadastro-usuario.html">Cadastrar-se Agora</a>
+                        <a class="href" href="./pages/cadastro/cadastro-usuario.html">Cadastrar-se Agora</a>
                         <hr>
-                        <a class="href" href="/pages/login-usuario.html">Realizar Login</a>
+                        <a class="href" href="./pages/login-usuario.html">Realizar Login</a>
                     </div>
 
                 </div><!--flex-->
@@ -104,7 +104,7 @@
             const link = document.getElementById("sobre-link");
             const dropdownMenu = document.querySelector(".dropdown-menu");
             const icon = link.querySelector("i");
-    
+
             // Função para verificar o estado do dropdown e ajustar o ícone
             function toggleIcon() {
                 if (dropdownMenu.classList.contains("show")) {
@@ -115,14 +115,14 @@
                     icon.classList.add("bi-caret-down-fill");
                 }
             }
-    
+
             // Supondo que você controle o menu com um clique ou outro evento
             link.addEventListener("click", (e) => {
                 e.preventDefault();
                 dropdownMenu.classList.toggle("show");
                 toggleIcon();
             });
-    
+
             // Opcional: Fechar o menu ao clicar fora dele
             document.addEventListener("click", (e) => {
                 if (!dropdownMenu.contains(e.target) && !link.contains(e.target)) {
@@ -160,14 +160,14 @@
             <div class="interface">
                 <div class="flex">
 
-                    <link rel="stylesheet" href="/css/pages/desktop/home/section-sobre.css">
+                    <link rel="stylesheet" href="./css/pages/desktop/home/section-sobre.css">
 
                     <div class="txt-topo-site efeito-heading-sobre"><!--ARRUMAR RESPONSIVO-->
                         <h1>SOBRE <span>NOSSO ATENDIMENTO</span></h1>
                     </div><!--txt-topo-site-->
 
                     <div class="container">
-                        <img class="img-esquerda efeito-img-sobre" src="/css/imgs/imagens/card-atendimento.png"
+                        <img class="img-esquerda efeito-img-sobre" src="./css/imgs/imagens/card-atendimento.png"
                             alt="Foto Atendimento">
 
                         <div class="txt-direita efeito-txt-sobre">
@@ -186,7 +186,7 @@
             <div class="interface">
                 <div class="flex">
 
-                    <link rel="stylesheet" href="/css/pages/desktop/home/section-servicos.css">
+                    <link rel="stylesheet" href="./css/pages/desktop/home/section-servicos.css">
 
                     <div class="txt-topo-site efeito-heading-sobre"><!--ARRUMAR RESPONSIVO-->
                         <h1>NOSSOS <span>SERVIÇOS</span></h1>
@@ -211,7 +211,7 @@
                             <li><a class="nome-servico"><span>14.</span> Platinado/Descoloração</a></li>
                         </ul>
                         <div class="img-mobile efeito-img-servicos"></div>
-                        <img class="img-esquerda efeito-img-servicos" src="/css/imgs/imagens/card-servicos.png"
+                        <img class="img-esquerda efeito-img-servicos" src="./css/imgs/imagens/card-servicos.png"
                             alt="Foto Atendimento">
                     </div><!--container-->
 
@@ -223,7 +223,7 @@
             <div class="interface">
                 <div class="flex">
 
-                    <link rel="stylesheet" href="/css/pages/desktop/home/section-feed.css">
+                    <link rel="stylesheet" href="./css/pages/desktop/home/section-feed.css">
 
                     <div class="container-feed esquerda">
                         <div class="flex">
@@ -233,7 +233,7 @@
 
                             <div class="card card1 efeito-card-esquerda">
                                 <div class="img-nome">
-                                    <img src="/css/imgs/foto-barbeiro/guilherme.png" alt="Foto Usuário">
+                                    <img src="./css/imgs/foto-barbeiro/guilherme.png" alt="Foto Usuário">
                                     <div class="estrelas">
                                         <h1>Guilherme Francisco</h1>
                                         <i class="bi bi-star-fill opaca"></i>
@@ -256,7 +256,7 @@
                         <div class="flex">
                             <div class="card card2 efeito-card-meio1">
                                 <div class="img-nome">
-                                    <img src="/css/imgs/foto-barbeiro/barber-gustavo.png" alt="Foto Usuário">
+                                    <img src="./css/imgs/foto-barbeiro/barber-gustavo.png" alt="Foto Usuário">
                                     <div class="estrelas">
                                         <h1>Gustavo Henrique</h1>
                                         <i class="bi bi-star-fill opaca"></i>
@@ -275,7 +275,7 @@
                             </div>
                             <div class="card card3 efeito-card-meio2">
                                 <div class="img-nome">
-                                    <img src="/css/imgs/foto-barbeiro/barber-bruno.png" alt="Foto Usuário">
+                                    <img src="./css/imgs/foto-barbeiro/barber-bruno.png" alt="Foto Usuário">
                                     <div class="estrelas">
                                         <h1>Bruno Eugênio</h1>
                                         <i class="bi bi-star-fill opaca"></i>
@@ -298,7 +298,7 @@
                         <div class="flex">
                             <div class="card card4 efeito-card-direita1">
                                 <div class="img-nome">
-                                    <img src="/css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
+                                    <img src="./css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
                                     <div class="estrelas">
                                         <h1>Vinícius da Silva</h1>
                                         <i class="bi bi-star-fill opaca"></i>
@@ -315,7 +315,7 @@
                             </div>
                             <div class="card card4 efeito-card-direita2">
                                 <div class="img-nome">
-                                    <img src="/css/imgs/foto-barbeiro/lucas.png" alt="Foto Usuário">
+                                    <img src="./css/imgs/foto-barbeiro/lucas.png" alt="Foto Usuário">
                                     <div class="estrelas">
                                         <h1>Lucas de Aguiar C.</h1>
                                         <i class="bi bi-star-fill opaca"></i>
@@ -342,8 +342,8 @@
             <div class="interface">
                 <div class="flex">
 
-                    <link rel="stylesheet" href="/css/pages/desktop/home/section-planos.css">
-                    <link rel="stylesheet" href="/css/pages/responsivo/home/resp-section-planos.css">
+                    <link rel="stylesheet" href="./css/pages/desktop/home/section-planos.css">
+                    <link rel="stylesheet" href="./css/pages/responsivo/home/resp-section-planos.css">
 
                     <div class="txt-topo-site efeito-frase-topo"><!--ARRUMAR RESPONSIVO-->
                         <h1>Planos <span>AND BARBERSHOP</span></h1>
@@ -407,10 +407,10 @@
 
                                 </div><!--content-->
                             </li><!--card-->
-                            
-                            <link rel="stylesheet" href="/css/partials/modal/modal-planos.css">
 
-                            <script src="/css/partials/modal/modal-planos.js" defer></script>
+                            <link rel="stylesheet" href="./css/partials/modal/modal-planos.css">
+
+                            <script src="./css/partials/modal/modal-planos.js" defer></script>
 
                             <dialog id="modal_plano_1">
                                 <div class="content-modal">
@@ -437,24 +437,26 @@
                                     <button type="button" class="btn" id="btn-fecha-1">Fechar</button>
                                 </div>
                             </dialog>
-                            
+
                             <dialog id="modal_plano_2">
                                 <div class="content-modal">
                                     <div class="title-img">
                                         <h3 class="id-titulo">02</h3>
                                         <h2 class="titulo">PLANO MENSAL 2</h2>
                                     </div>
-                                    
+
                                     <div class="mais-info">
                                         <div>
                                             <h1>Descrição:</h1>
-                                            <a class="descricao" id="desc-longa">Acesso vitalício para Cortes de Cabelo e Barba durante 1 mês, podendo agendar quantas vezes desejar</a>
+                                            <a class="descricao" id="desc-longa">Acesso vitalício para Cortes de Cabelo
+                                                e Barba durante 1 mês, podendo agendar quantas vezes desejar</a>
                                         </div>
-                                        
+
                                         <div>
                                             <h1>Preço: </h1>
                                             <i class="bi bi-cash-stack"></i><a class="preco">R$159,90</a><br>
-                                            <h1 class="obs"><i class="bi bi-exclamation-triangle"></i>*valor da assinatura</h1>
+                                            <h1 class="obs"><i class="bi bi-exclamation-triangle"></i>*valor da
+                                                assinatura</h1>
                                         </div>
                                     </div>
                                     <button type="button" class="btn" id="btn-fecha-2">Fechar</button>
@@ -467,17 +469,19 @@
                                         <h3 class="id-titulo">03</h3>
                                         <h2 class="titulo">PLANO TRIMESTRAL</h2>
                                     </div>
-                                    
+
                                     <div class="mais-info">
                                         <div>
                                             <h1>Descrição:</h1>
-                                            <a class="descricao" id="desc-longa">Acesso vitalício para Cortes de Cabelo e Barba durante 3 meses, podendo agendar quantas vezes desejar</a>
+                                            <a class="descricao" id="desc-longa">Acesso vitalício para Cortes de Cabelo
+                                                e Barba durante 3 meses, podendo agendar quantas vezes desejar</a>
                                         </div>
-                                        
+
                                         <div>
                                             <h1>Preço: </h1>
                                             <i class="bi bi-cash-stack"></i><a class="preco">R$99,90</a><br>
-                                            <h1 class="obs"><i class="bi bi-exclamation-triangle"></i>*valor da assinatura</h1>
+                                            <h1 class="obs"><i class="bi bi-exclamation-triangle"></i>*valor da
+                                                assinatura</h1>
                                         </div>
                                     </div>
                                     <button type="button" class="btn" id="btn-fecha-3">Fechar</button>
@@ -487,7 +491,7 @@
                     </ul>
 
 
-                    <script src="/css/partials/cards/vanilla-tilt.js"></script>
+                    <script src="./css/partials/cards/vanilla-tilt.js"></script>
                     <script>
                         VanillaTilt.init(document.querySelectorAll(".card"), {
                             max: 25,
@@ -501,8 +505,8 @@
             </div><!--interface-->
         </section>
 
-        <link rel="stylesheet" href="/css/partials/footer/main-footer.css">
-        <link rel="stylesheet" href="/css/partials/footer/resp-main-footer.css">
+        <link rel="stylesheet" href="./css/partials/footer/main-footer.css">
+        <link rel="stylesheet" href="./css/partials/footer/resp-main-footer.css">
 
         <footer class="main-footer">
             <div class="interface">
@@ -511,7 +515,7 @@
 
                     <div class="coluna1 efeito-coluna1-footer">
                         <div class="logo">
-                            <img src="/css/imgs/logo/logo-png.png" alt="logo-nav">
+                            <img src="./css/imgs/logo/logo-png.png" alt="logo-nav">
                         </div><!--logo-->
 
                         <div class="text-logo">
@@ -581,7 +585,7 @@
 
     </main>
 
-    <script src="./css/partials/header/header.js"></script>
+    <script src="../css/partials/header/header.js"></script>
 </body>
 
 </html>

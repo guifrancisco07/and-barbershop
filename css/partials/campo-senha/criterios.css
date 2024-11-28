@@ -1,0 +1,49 @@
+.criterios-senha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 10px;
+  padding: 0px 4%;
+  width: 65%;
+}
+
+.criterios-senha i{
+    font-size: 12px ;
+    margin-right: 5px;
+}
+
+.criterios-senha a.invalid {
+  color: #db3e3e;
+  font-family: Poppins-Medium;
+  font-size: 12px;
+}
+
+.criterios-senha a.valid {
+    color: #4ed05f;
+    font-family: Poppins-Medium;
+    font-size: 12px;
+    transition: .3s;
+}
+
+.coincide-senha {
+  margin: 10px;
+}
+
+.coincide-senha i{
+  font-size: 12px ;
+  margin-right: 5px;
+}
+
+.coincide-senha a.error {
+  color: #db3e3e;
+  font-family: Poppins-Medium;
+  font-size: 12px;
+}
+
+.coincide-senha a.valid {
+  color: #4ed05f;
+  font-family: Poppins-Medium;
+  font-size: 12px;
+  transition: .3s;
+}
