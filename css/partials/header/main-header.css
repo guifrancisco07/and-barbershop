@@ -2,12 +2,12 @@
 /* ANIMAÇÃO JS */
 header.rolagem{
     z-index: 3;
-    background-color: #091c1d;
+    background-color: rgba(9, 28, 29);
     padding: 10px 4%;
 }
 
 header.rolagem nav a{
-    color: white;
+    color: #1d1b1a;
 }
 /* FIM DA ANIMAÇÃO JS */
 
@@ -34,7 +34,7 @@ header > .interface{
 }
 
 header nav a{
-    color: #fff;
+    color: #1d1b1a;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
@@ -46,7 +46,6 @@ header nav a{
 }
 
 header nav.menu-desktop a:hover{
-    color: #fff;
     background-color: #f8975b;
     transform: scale(1.05);
 }
@@ -57,7 +56,58 @@ header nav ul{
 
 header nav.menu-desktop ul li{
     display: inline-block;
-    padding: 0 30px;
+    padding: 0 40px;
+}
+
+header nav.menu-desktop ul li .dropdown-menu{
+    position: absolute;
+    display: none;
+}
+
+header nav.menu-desktop ul li.dropdown i{
+    margin-left: 5px;
+
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animação */
+    transition: .5;
+}
+
+header nav.menu-desktop ul li.dropdown i.bi-caret-up-fill {
+    transform: rotate(180deg); /* Pode rotacionar suavemente */
+    opacity: 1; /* Opacidade visível */
+  }
+  
+  /* Quando a seta aponta para baixo */
+header nav.menu-desktop ul li.dropdown i.bi-caret-down-fill {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+header nav.menu-desktop ul li .dropdown-menu a{
+    display: block;
+
+    font-size: 12px;
+
+    padding: 4px 7px;
+    margin: 10px 0px;
+    border-radius: 8px;
+
+    text-align: center;
+
+    background-color: #b67248;
+    box-shadow: 0 0 12px #000;
+    /*text-align: center;*/
+}
+
+header nav.menu-desktop ul li .dropdown-menu a:hover{
+    background-color: #ce8253;
+    transform: scale(1.05);
+}
+
+header nav.menu-desktop ul li.dropdown:hover .dropdown-menu.show {
+    display: block;
+    transition: .5;
+
+    animation: dropdown .5s ease-in-out alternate;
 }
 
 .logo img{

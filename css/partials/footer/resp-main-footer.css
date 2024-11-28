@@ -1,0 +1,72 @@
+@media screen and (max-width: 960px) {
+
+    footer>.interface {
+        gap: 0px;
+    }
+
+    .heading-footer {
+        font-size: 14px;
+    }
+
+    .main-footer .top-footer {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 10px 4%;
+        gap: 20px;
+    }
+
+    .main-footer .top-footer ul li a {
+        font-size: 10px;
+    }
+
+    .main-footer .top-footer ul li i {
+        font-size: 11px;
+    }
+
+    .coluna2,
+    .coluna3{
+        height: 170px;
+    }
+
+    .coluna4{
+        height: 140px;
+    }
+
+    .coluna1 img {
+        width: 120px;
+        height: auto;
+    }
+
+    .coluna1 .text-logo {
+        max-width: 100%;
+    }
+
+    .main-footer .bottom-footer{
+        gap: 5px;
+    }
+
+    .redes-icones{
+        width: auto;
+    }
+    
+    .redes-icones .sub-heading-footer {
+        width: auto;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .redes-icones i {
+        color: #d0804e;
+        font-size: 12px;
+        padding: 5px 3px;
+    }
+
+    .copy-text{
+        max-width: 170px;
+    }
+
+    .copy-text a {
+        font-size: 10px;
+    }
+
+}
