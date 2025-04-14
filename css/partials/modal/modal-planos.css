@@ -8,7 +8,7 @@ dialog{
 
     animation: esmaecer-width .3s ease-out;
     
-    background: url(/css/imgs/background/background-feedback2.png);
+    background: url(../../../css/imgs/background/background-feedback2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,7 +45,7 @@ dialog .content-modal .title-img{
     overflow: hidden;
 
     border-radius: 5%;
-    background: url(/css/imgs/imagens/foto-atendimento.png);
+    background: url(../../../css/imgs/imagens/foto-atendimento.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,9 +84,10 @@ dialog .content-modal .mais-info{
     width: 100%;
     padding: 20px 6%;
 
+    
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
 }
 
