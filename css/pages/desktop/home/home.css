@@ -1,7 +1,7 @@
 .topo-do-site{
     min-height: 100vh;
     width: 100%;
-    background-image: url("../../../imgs/background/background-home.png");
+    background-image: url("/css/imgs/background/background-home.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,7 +51,7 @@ section.topo-do-site .flex::after{
 .topo-do-site .txt-topo-site h1{
     margin-top: -1%;
     text-align: start;
-    color: #f7d2a9;
+    color: #ffb384;
     font-size: 5em;
     font-family: Espiritu Cond;
 }
