@@ -1,7 +1,7 @@
 /* INFOS DA CONTA */
 .info-conta {
     height: 60px;
-    width: 100%;
+    width: auto;
     padding: 5px 3%;
 
     background-color: #d0804e;
