@@ -2,12 +2,12 @@
 /* ANIMAÇÃO JS */
 header.rolagem{
     z-index: 3;
-    background-color: rgba(9, 28, 29);
+    background-color: #0c0c0c;
     padding: 10px 4%;
 }
 
 header.rolagem nav a{
-    color: #1d1b1a;
+    color: #0c0c0c;
 }
 /* FIM DA ANIMAÇÃO JS */
 
@@ -22,10 +22,25 @@ header{
     transition: .4s;
 }
 
-header img{
+header .logo img{
     height: auto;
     width: 120px;
 }
+
+.logo a {
+    all: unset;
+    display: inline-block;
+}
+
+.logo a:hover{
+    cursor: pointer;
+}
+
+.logo-link {
+    display: inline-block;
+    padding: 0;
+}
+
 
 header > .interface{
     display: flex;
@@ -34,7 +49,8 @@ header > .interface{
 }
 
 header nav a{
-    color: #1d1b1a;
+    color: #0c0c0c;
+    font-size: 14px;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
@@ -56,7 +72,7 @@ header nav ul{
 
 header nav.menu-desktop ul li{
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 30px;
 }
 
 header nav.menu-desktop ul li .dropdown-menu{
@@ -116,6 +132,10 @@ header nav.menu-desktop ul li.dropdown:hover .dropdown-menu.show {
 }
 
 .menu-mobile, .btn-abrir-menu{
+    display: none;
+}
+
+.overlay-menu {
     display: none;
 }
 
