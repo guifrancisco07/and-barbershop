@@ -5,6 +5,11 @@
         background-position-x: 48%;
     }
 
+    section.topo-do-site .flex::after{
+        height: 100vh;
+        bottom: 0;
+    }
+
     section.topo-do-site .flex{
         height: 100vh;
         flex-direction: column;
