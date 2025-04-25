@@ -1,6 +1,6 @@
 .sec-planos{
     min-height: 110vh;
-    background-image: url("../../../imgs/background/background-manager.png");
+    background-image: url("/css/imgs/background/background-manager.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,17 +9,19 @@
 }
 
 section.sec-planos .flex{
-    height: 110vh;
+    min-height: 100vh;
     max-width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    padding: 50px 0;
 }
 
 .txt-topo-site h1{
     margin-top: 15%;
     text-align: center;
-    color: #f7d2a9;
+    color: #ffb384;
     font-size: 5em;
     font-family: Espiritu Cond;
 }
@@ -187,3 +189,19 @@ section.sec-planos .flex{
     bottom: 40px;
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .container-planos ul.ul-planos {
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .container-planos {
+      padding: 0 5%;
+    }
+  
+    .txt-topo-site h1 {
+      font-size: 3em;
+      margin-top: 20%;
+    }
+  }
