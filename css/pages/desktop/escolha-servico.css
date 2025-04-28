@@ -1,6 +1,6 @@
 .fundo-section{
   min-height: 100vh;
-  background-image: url("../../imgs/background/background-home.png");
+  background-image: url(../../imgs/background/background-planos.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,8 +25,9 @@ section.fundo-section .flex{
   width: 75%;
   
   border-radius: 15px;
-  background-color: rgba(29, 27, 26, 50%);
-  backdrop-filter: blur(2px);
+  background-color: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(4px);
+  box-shadow: 4px 10px 20px #080808;
 
   display: flex;
   align-items: center;
@@ -47,7 +48,7 @@ section.fundo-section .flex{
 
 .title {
   z-index: 1;
-  color: #f7d2a9;
+  color: #ec9c6a;
   font-family: Espiritu Cond;
   font-size: 80px;
   font-weight: bold;
@@ -58,8 +59,8 @@ section.fundo-section .flex{
 
 .subtitle {
   z-index: 1;
-  color: #b4936d;
-  -webkit-text-stroke: 1px #b4936d;
+  color: #d0804e;
+  -webkit-text-stroke: 1px #d0804e; 
   text-shadow: -2px -4px 2px #061213;
 
   font-family: Espiritu Cond;
@@ -95,7 +96,7 @@ section.fundo-section .flex{
 }
 
 .lista-servico::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
   background-color: #1d1b1a;
   border-radius: 10px;
   border: 5%;
@@ -115,12 +116,23 @@ section.fundo-section .flex{
   flex-direction: column;
   justify-content: center;
 
-  border: solid 3px #11100f;
+  border: solid 2px #0c0c0c;
   background-color: #1d1b1a;
-  box-shadow: 0px 0px 8px #11100f;
-  border-radius: 20px;
+  box-shadow: 0px 0px 8px #0c0c0c;
+  border-radius: 16px;
 
   color: #d0804e;
+}
+
+.element:hover{
+  transition: .2s;
+
+  border: 0;
+  border-radius: 12px;
+  border-left: solid 7px #d0804e;
+
+  color: #f19156;
+  background-color: #161514;
 }
 
 .titulo-servico {
@@ -193,7 +205,7 @@ section.fundo-section .flex{
   border-bottom: solid 3px #774a2e;
   background: linear-gradient(135deg, #d0804e, #b16d43);
 
-  transition: all 0.2s ease;
+  transition: .2s;
   box-shadow: 0px 2px 3px #000d3848, inset 0px 4px 5px #aa683f,
     inset 0px -4px 5px #8d5735;
 }
@@ -203,5 +215,5 @@ section.fundo-section .flex{
   color: #fff;
   box-shadow: 0px 0px 8px #5c3822;
   background: linear-gradient(135deg, #ee9259, #d0804e);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }

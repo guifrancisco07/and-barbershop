@@ -1,9 +1,14 @@
 .sec-sobre {
-    min-height: 100vh;
+    /*
+    min-height: 50vh;
     background-image: url("../../../imgs/background/background-feedback2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    */
+    max-height: 100vh;
+    background-color: #050505;
+   
     background-position-x: 0%;
 }
 
@@ -12,31 +17,31 @@ section.sec-sobre .flex {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px 0px;
 }
 
 .sec-sobre .txt-topo-site h1 {
     text-align: center;
     color: #d0804e !important;
-    font-size: 5em;
+    font-size: 4em;
     font-family: Espiritu Cond;
+    margin-top: -7%;
 }
 
 .sec-sobre .container {
-    max-height: 100%;
-    width: 90%;
-    padding: 20px 4%;
-    gap: 10px;
+    height: 100%;
+    width: 70%;
+    background-color: #d0804e63;
+    gap: 50px;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-
-    margin-bottom: 10%;
     /*animation: aparecer-img-txt1 .5s ease-out alternate;*/
 }
 
 .container img.img-esquerda {
-    height: 400px;
+    height: 200px;
     width: auto;
     border-radius: 20px;
 
@@ -46,8 +51,6 @@ section.sec-sobre .flex {
 .container .txt-direita {
     height: 100%;
     width: 50%;
-    padding: 20px 0%;
-    line-height: 2.5em;
 
     display: flex;
     flex-direction: column;
@@ -59,23 +62,10 @@ section.sec-sobre .flex {
 }
 
 .txt-direita h1 {
-    letter-spacing: 1px;
-    font-family: Espiritu;
+    font-family: Poppins-SemiBold;
     font-weight: 10;
-    font-size: 26px;
+    font-size: 15px;
     color: #fff;
-}
-
-.txt-direita h1 span.line-bottom {
-    position: relative;
-    top: -10px;
-}
-
-.txt-direita h1 span.font-edt {
-    font-family: Espiritu Cond;
-    font-size: 35px;
-    color: #d0804e;
-    font-weight: bold;
 }
 
 @media screen and (max-width: 960px) {

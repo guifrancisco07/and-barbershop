@@ -1,6 +1,6 @@
 .sec-planos{
     min-height: 110vh;
-    background-image: url("../../../imgs/background/background-manager.png");
+    background-image: url("../../../imgs/background/background-planos.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,7 +66,7 @@ section.sec-planos .flex{
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 
-    background-color: rgba(29, 27, 26, 50%);
+    background-color: rgba(5, 5, 5, 0.8);
     backdrop-filter: blur(2px);
     
     overflow: hidden;

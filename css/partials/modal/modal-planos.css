@@ -92,12 +92,13 @@ dialog .content-modal .mais-info{
 }
 
 .mais-info{
+    gap: 10px;
     text-align: justify;
 }
 
 .mais-info h1{
     color: #d0804e;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Espiritu;
     font-weight: 10;
 }
@@ -119,7 +120,7 @@ dialog .content-modal .mais-info{
 
 .mais-info a.descricao{
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-family: Poppins-Medium;
 }
 
@@ -135,7 +136,7 @@ dialog .content-modal .mais-info{
 
 .mais-info a.preco{
     color: #fff;
-    font-size: 22px;
+    font-size: 18px;
     font-family: Poppins-Bold;
 }
 
@@ -143,8 +144,12 @@ dialog .content-modal button{
     position: absolute;
     bottom: 25px;
     right: 25px;
+
+    font-size: 12px;
+    padding: 3px 4%;
+    border-radius: 10px;
+
     text-transform: capitalize !important;
-    font-size: 14px !important;
 }
 
 dialog a.titulo{
