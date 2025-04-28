@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="../../css/imgs/logo/aba-logo-and.png" sizes="16x16">
+
+    <link rel="stylesheet" href="../../css/pages/desktop/index.css">
+    <link rel="stylesheet" href="../../css/fonts/font-imports.css">
+
+    <link rel="stylesheet" href="../../css/buttons/btns-home.css">
+    <link rel="stylesheet" href="../../css/buttons/btns-form.css">
+
+    <link rel="stylesheet" href="../../css/animations/animations-txt.css">
+    <link rel="stylesheet" href="../../css/animations/animations-img.css">
+
+    <link rel="stylesheet" href="../../css/pages/desktop/agendamento.css">
+    <link rel="stylesheet" href="../../css/pages/responsivo/resp-agendamento.css">
+
+    <script src="../../css/partials/header/menu-mobile.js" defer></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../../css/partials/reveal/reveal.js" defer></script>
+    <title>Escolha de Serviço - And Barbershop</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="../../css/partials/header/main-header.css">
+    <link rel="stylesheet" href="../../css/partials/header/menu-mobile.css">
+    <link rel="stylesheet" href="../../css/partials/header/info-conta.css">
+
+    <header id="header">
+        <div class="interface">
+
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="../../css/imgs/logo/logo-png.png" alt="logo-nav">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="#">SOBRE</a></li>
+                    <li><a href="#">PLANOS E ASSINATURAS</a></li>
+                    <li><a href="../agendamento/escolha-servico.html">AGENDAR AQUI</a></li>
+                </ul>
+            </nav>
+
+            <div class="info-conta">
+                <div class="flex">
+
+                    <div class="img-conta">
+                        <img src="../../css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
+                    </div>
+
+                    <div class="txt-conta">
+                        <a class="href" href="../cadastro/cadastro-usuario.html">Cadastrar-se Agora</a>
+                        <hr>
+                        <a class="href" href="../login-usuario.html">Realizar Login</a>
+                    </div>
+
+                </div><!--flex-->
+            </div><!--info-conta-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="/index.html"><i class="bi bi-house-door-fill"></i>Home</a></li>
+                        <li><a href="#sec-sobre"><i class="bi bi-person-lines-fill"></i>Nosso Atendimento</a></li>
+                        <li><a href="#sec-servicos"><i class="bi bi-scissors"></i>Nossos Serviços</a></li>
+                        <li><a href="#sec-feed"><i class="bi bi-chat-square-text-fill"></i>Feedbacks</a></li>
+                        <li><a href="#sec-planos"><i class="bi bi-journal-bookmark-fill"></i>Planos e Assinaturas</a>
+                        </li>
+                        <li><a href="/pages/agendamento/escolha-servico.html"><i class="bi bi-journal-check"></i>Agende
+                                Aqui</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="fundo-section">
+            <div class="interface">
+                <div class="flex">
+
+                    <div class="container efeito-container-form">
+                        <div class="form-container">
+                            <div class="heading efeito-heading-form">
+                                <a class="heading">Agendamento <span>AND BARBERSHOP</span></a>
+                            </div>
+
+                            <div class="opcao-servico efeito-opcao-servico">
+                                <a class="title">Recorte Cabelo</a>
+                                <a class="desc">Descrição do Serviço</a>
+                            </div>
+
+                            <form class="form" action="../../pages/agendamento/ver-agendamento.html" method="post">
+
+                                <div class="content">
+
+                                    <div class="esquerda">
+                                        <div class="opcao efeito-opcao-barbeiro">
+                                            <a for="barbeiroId">Selecione um Barbeiro:</a>
+                                            <div class="custom-select" id="barbeiroSelect">
+
+                                                <div class="barbeiro-option 1">
+                                                    <img class="img-barbeiro ok"
+                                                        src="../../css/imgs/foto-barbeiro/barber-gustavo.png"
+                                                        alt="Foto do barbeiro">
+                                                    <a>Gustavo Henrique</a>
+                                                </div>
+
+                                                <div class="barbeiro-option 2">
+                                                    <img class="img-barbeiro ok"
+                                                        src="../../css/imgs/foto-barbeiro/barber-bruno.png"
+                                                        alt="Foto do barbeiro">
+                                                    <a>Bruno Eugênio</a>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" id="barbeiroId" name="barbeiroId" required>
+                                        </div>
+                                    </div><!--esquerda-->
+
+                                    <div class="direita">
+                                        <div class="opcao efeito-opcao-data" style="gap: 10px;">
+                                            <a for="data">Selecione uma data:</a>
+                                            <input type="date" id="data" name="data" required>
+                                            <div id="erroData">A data selecionada já passou. Por favor, escolha uma data
+                                                válida!</div>
+                                        </div>
+
+                                        <div class="opcao efeito-opcao-horario" style="gap: 10px;">
+                                            <a for="hora">Selecione um horário:</a>
+                                            <select id="hora" name="hora" required>
+                                                <option value="">Selecione uma data primeiro</option>
+                                            </select>
+                                        </div>
+                                    </div><!--direita-->
+
+                                </div><!--content-->
+
+                                <div class="finalizar-container efeito-btn-form">
+                                    <button class="btn-confirma" id="btnAgendar" disabled>Agendar agora</button>
+                                    <h6>
+                                        <a>Preço: <span>R$99,90</span></a>
+                                        <a class="duracao">Duração: <span>60min</span></a>
+                                    </h6>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </div><!--interface-->
+        </section>
+
+        <link rel="stylesheet" href="../../css/partials/footer/main-footer.css">
+        <link rel="stylesheet" href="../../css/partials/footer/resp-main-footer.css">
+
+        <footer class="main-footer">
+            <div class="interface">
+
+                <div class="top-footer esconder-container">
+
+                    <div class="coluna1 efeito-coluna1-footer">
+                        <div class="logo">
+                            <img src="../../css/imgs/logo/logo-png.png" alt="logo-nav">
+                        </div><!--logo-->
+
+                        <div class="text-logo">
+                            <h5>And Barbershop combina estilo e tradição em um ambiente acolhedor e sofisticado. Com
+                                cortes modernos, barbas impecáveis e atendimento personalizado, proporcionamos uma
+                                experiência única para quem valoriza qualidade e elegância.</h5>
+                        </div>
+                    </div><!--coluna1-->
+
+                    <div class="coluna2 efeito-coluna2-footer">
+                        <div class="heading-footer barbearia"><i class="bi bi-house-fill"></i>Nossa Barbearia</div>
+                        <ul>
+                            <li><i class="bi bi-scissors"></i><a>Nosso Serviços</a></li>
+                            <li><i class="bi bi-people-fill"></i><a>Nossos Profissionais</a></li>
+                            <li><i class="bi bi-cup-hot-fill"></i><a>Nosso Ambiente</a></li>
+                            <li><i class="bi bi-bookmark-check-fill"></i><a>Nosso Compromisso</a></li>
+                        </ul>
+                    </div><!--coluna2-->
+
+                    <div class="coluna3 efeito-coluna3-footer">
+                        <div class="heading-footer"><i class="bi bi-alarm-fill"></i>Horários de atendimento</div>
+                        <ul>
+                            <li><i class="bi bi-calendar2-week"></i><a>Seg. a Sexta: 09h às 21h30</a></li>
+                            <li><i class="bi bi-calendar2-week"></i><a>Sábado: 09h às 17h30</a></li>
+                        </ul>
+                    </div><!--coluna3-->
+
+                    <div class="coluna4 efeito-coluna4-footer">
+                        <div class="heading-footer contato"><i class="bi bi-telephone-outbound-fill"></i>Contato</div>
+                        <ul>
+                            <li><i class="bi bi-geo-alt-fill"></i><a style="font-size: 10px;">Av. Universitária 3125 -
+                                    São Sebastião, Criciúma</a></li>
+                            <li><i class="bi bi-envelope-fill"></i><a>andbarbershop@gmail.com</a></li>
+                            <li><i class="bi bi-whatsapp"></i><a>+55 (48) 9644 - 3861</a></li>
+                        </ul>
+                    </div><!--coluna4-->
+
+                </div><!--top-footer-->
+
+                <div class="bottom-footer esconder-container">
+
+                    <div class="copy-text efeito-copy-footer">
+                        <a>Copyright ©2024 Todos direitos reservados para: <span>Guilherme e Lucas</span></a>
+                    </div>
+
+                    <div class="redes-icones">
+                        <div class="sub-heading-footer efeito-heading-redes-footer">Nossas Redes Sociais:</div>
+
+                        <div class="icones-bottom efeito-icones-footer">
+                            <ul>
+                                <li><a class="action" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                                <li><a class="action" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                                <li><a class="action" target="_blank"
+                                        href="https://www.instagram.com/andradebarber.shop/"><i
+                                            class="bi bi-instagram"></i></a></li>
+                                <li><a class="action" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                                <li><a class="action" target="_blank"><i class="bi bi-youtube"></i></a></li>
+                            </ul>
+                        </div><!--icones bottom-->
+
+                    </div><!--rede-icones-->
+
+                </div><!--bottom-footer-->
+
+            </div><!--interface-->
+        </footer>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="../../css/partials/header/header.js"></script>
+
+    <!--ARRUMAR SCRIPTS PARA MUDAR BOTÃO E TEXTO QUANDO A DATA NÃO FOR VÁLIDA-->
+    <script>
+        const dataInput = document.getElementById('data');
+        const horaSelect = document.getElementById('hora');
+        const erroData = document.getElementById('erroData');
+
+        // Função para validar data
+        dataInput.addEventListener('change', () => {
+            const dataSelecionada = new Date(dataInput.value);
+            const hoje = new Date();
+
+            // Zerar as horas para comparar apenas o dia
+            hoje.setHours(0, 0, 0, 0);
+
+            if (dataSelecionada < hoje) {
+                erroData.style.display = 'block';
+                horaSelect.innerHTML = '<option value="">Selecione uma data válida primeiro</option>';
+            } else {
+                erroData.style.display = 'none';
+                preencherHorarios(); // se quiser carregar horários
+            }
+        });
+
+        // Função para preencher horários (exemplo simples)
+        function preencherHorarios() {
+            horaSelect.innerHTML = `
+        <option value="">Selecione um horário</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+        <option value="19:00">19:00</option>
+        <option value="20:00">20:00</option>
+        <option value="21:00">21:00</option>
+    `;
+        }
+
+        // Função para validar horário selecionado
+        horaSelect.addEventListener('change', () => {
+            const dataSelecionada = new Date(dataInput.value);
+            const horaSelecionada = horaSelect.value;
+
+            if (!dataSelecionada || !horaSelecionada) return; // não faz nada se campos vazios
+
+            const agora = new Date();
+
+            
+            // Se a data é hoje, comparar horas
+            if (dataSelecionada.toDateString() === agora.toDateString()) {
+                const [hora, minuto] = horaSelecionada.split(':').map(Number);
+                const horarioSelecionado = new Date();
+                horarioSelecionado.setHours(hora, minuto, 0, 0);
+
+                if (horarioSelecionado < agora) {
+                    erroData.style.display = 'block';
+                    horaSelect.innerHTML = '<option value="">Selecione uma data válida primeiro</option>';
+                    horaSelect.value = ''; // limpa o select
+                }
+            }
+        });
+    </script>
+
+    <script>
+        const selectContainer = document.getElementById('barbeiroSelect');
+
+        selectContainer.addEventListener('click', (event) => {
+            const clickedOption = event.target.closest('.barbeiro-option');
+            if (clickedOption) {
+                selectContainer.querySelectorAll('.barbeiro-option').forEach(option => {
+                    option.classList.remove('selected');
+                });
+
+                clickedOption.classList.add('selected');
+                hiddenInput.value = clickedOption.dataset.value;
+            }
+        });
+    </script>
+</body>
+
+</html>

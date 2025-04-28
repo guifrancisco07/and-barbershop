@@ -1,6 +1,6 @@
 .fundo-section {
     min-height: 100vh;
-    background-image: url(../../imgs/background/background-home.png);
+    background-image: url(../../imgs/background//background-planos.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,11 +18,12 @@ section.fundo-section .flex {
 }
 
 .fundo-section .container {
-    height: 650px;
+    height: 600px;
     width: 800px;
 
-    background-color: rgba(9, 28, 29, 50%);
-    backdrop-filter: blur(2px);
+    background-color: rgba(10, 10, 10, 0.4);
+    backdrop-filter: blur(4px);
+    box-shadow: 4px 10px 20px #080808;
     border-radius: 25px;
 
     display: flex;
@@ -134,11 +135,11 @@ section.fundo-section .flex {
     border-radius: 12px;
     /*border-bottom: 1px solid #eaeaea;*/
     background-color: #ad6b41;
+    border: solid 1px #6d442a;
     margin-bottom: 10px;
     
     cursor: pointer;
     transition: .3s;
-    border: none;
 }
 
 .barbeiro-option .img-barbeiro.ok{
@@ -153,10 +154,6 @@ section.fundo-section .flex {
     color: #1d1b1a;
 }
 
-.barbeiro-option:last-child {
-    border-bottom: none;
-}
-
 .img-barbeiro {
     width: 40px;
     height: 40px;
@@ -168,6 +165,7 @@ section.fundo-section .flex {
 .barbeiro-option:hover{
     background-color: #a76740;
     color: #fff;
+    transform: scale(1.005);
     border: solid 1px #368d42;
     box-shadow: 0px 0px 10px #2b7034;
 }
@@ -175,7 +173,7 @@ section.fundo-section .flex {
 .barbeiro-option.selected {
     transform: scale(1.02);
     background-color: #f8975b;
-    border: solid 2px #47bd57;
+    border: solid 1px #47bd57;
     box-shadow: 0px 0px 12px #3ca049;
 }
 /* FIM OPÇÃO DE BARBEIRO */
@@ -266,9 +264,14 @@ section.fundo-section .flex {
     font-family: Poppins-Medium;
     color: #db3e3e;
     text-align: center;
-    font-size: 12px;
-    width: 220px;
+    font-size: 14px;
+
+    width: 65%;
+
+    position: relative;
+    top: -3px;
     display: none;
+    margin: 10px;
 }
 
 .container span {
