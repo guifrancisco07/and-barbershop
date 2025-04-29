@@ -1,0 +1,112 @@
+@media screen and (max-width: 1240px) {
+
+  /* CLASSES GERAIS */
+  section.fundo-section .flex{
+    flex-direction: column;
+    background-position-x: 53%;
+    gap: 20px;
+}
+
+  .fundo-section .container {
+    margin-top: 5%;
+    height: 500px;
+    width: 60%;
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* IMG + TXT */
+  .text-img {
+    height: 150px;
+    width: 200px;
+
+    margin-top: 5%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
+
+  .img-icon {
+    height: auto;
+    width: 90px;
+    top: 25px;
+    left: 28%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 45px;
+    top: 0%;
+    left: 0%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subtitle {
+    font-size: 65px;
+    text-shadow: -2px -2px 2px #0d2829;
+    top: 12%;
+    left: 1.5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* LISTA */
+  .lista-servico {
+    margin-top: 25px;
+    max-height: 500px;
+    width: 100%;
+    border-radius: 15px;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .element {
+    height: 80px;
+    width: 90%;
+    margin: 10px;
+    border-radius: 12px;
+  }
+
+  .titulo-servico {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .preco-servico {
+    font-size: 10px;
+    justify-content: flex-start;
+    margin-left: 10px;
+    bottom: 1px;
+  }
+
+  .duracao-servico {
+    font-size: 10px;  
+    justify-content: flex-start;
+    margin-left: 10px;
+    position: relative;
+    bottom: 1px;
+  }
+
+  .btn-element {
+    height: 10px;
+    width: 20%;
+    position: relative;
+    left: 77%;
+    top: -10px;
+  }
+}
