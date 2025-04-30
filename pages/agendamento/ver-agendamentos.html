@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="../../css/imgs/logo/aba-logo-and.png" sizes="16x16">
+
+    <link rel="stylesheet" href="../../css/pages/desktop/index.css">
+    <link rel="stylesheet" href="../../css/fonts/font-imports.css">
+
+    <link rel="stylesheet" href="../../css/buttons/btns-home.css">
+    <link rel="stylesheet" href="../../css/buttons/btns-form.css">
+
+    <link rel="stylesheet" href="../../css/animations/animations-txt.css">
+    <link rel="stylesheet" href="../../css/animations/animations-img.css">
+
+    <link rel="stylesheet" href="../../css/pages/desktop/historico-agendamentos.css">
+    <link rel="stylesheet" href="../../css/pages/responsivo/resp-historico-agendamento.css">
+
+    <script src="../../css/partials/header/menu-mobile.js" defer></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../../css/partials/reveal/reveal.js" defer></script>
+    <title>Escolha de Serviço - And Barbershop</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="../../css/partials/header/main-header.css">
+    <link rel="stylesheet" href="../../css/partials/header/menu-mobile.css">
+    <link rel="stylesheet" href="../../css/partials/header/info-conta.css">
+
+    <header id="header">
+        <div class="interface">
+
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="../../css/imgs/logo/logo-png.png" alt="logo-nav">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="#">SOBRE</a></li>
+                    <li><a href="#">PLANOS E ASSINATURAS</a></li>
+                    <li><a href="../agendamento/escolha-servico.html">AGENDAR AQUI</a></li>
+                </ul>
+            </nav>
+
+            <div class="info-conta">
+                <div class="flex">
+
+                    <div class="img-conta">
+                        <img src="../../css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
+                    </div>
+
+                    <div class="txt-conta">
+                        <a class="href" href="../cadastro/cadastro-usuario.html">Cadastrar-se Agora</a>
+                        <hr>
+                        <a class="href" href="../login-usuario.html">Realizar Login</a>
+                    </div>
+
+                </div><!--flex-->
+            </div><!--info-conta-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="/index.html"><i class="bi bi-house-door-fill"></i>Home</a></li>
+                        <li><a href="#sec-sobre"><i class="bi bi-person-lines-fill"></i>Nosso Atendimento</a></li>
+                        <li><a href="#sec-servicos"><i class="bi bi-scissors"></i>Nossos Serviços</a></li>
+                        <li><a href="#sec-feed"><i class="bi bi-chat-square-text-fill"></i>Feedbacks</a></li>
+                        <li><a href="#sec-planos"><i class="bi bi-journal-bookmark-fill"></i>Planos e Assinaturas</a>
+                        </li>
+                        <li><a href="/pages/agendamento/escolha-servico.html"><i class="bi bi-journal-check"></i>Agende
+                                Aqui</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+        </div><!--interface-->
+    </header>
+
+    <main>
+
+        <section class="ver-agendamentos">
+          <div class="interface">
+            <div class="flex">
+  
+              <div class="txt-topo-site efeito-frase-agendamentos"><!--ARRUMAR RESPONSIVO-->
+                <h1>Meus Agendamentos</h1>
+              </div><!--txt-topo-site-->
+  
+              <div class="container efeito-container-agendamentos">
+                <ul>
+                        <li class="efeito-card-agendamento-1">
+                          <div class="coluna info">
+                            <a class="title-agendamento">Serviço: &nbsp;<span>Recorte Cabelo</span></a>
+                            <a class="preco-agendamento">
+                                <i class="bi bi-cash-coin"></i>R$<span>99,90</span>
+                            </a>
+                            <a class="barbeiro-agendamento">Realizado por: &nbsp;<span>Gustavo Henrique</span></a>
+  
+                            <div class="dia-hora">
+                              <a><i class="bi bi-calendar-week"></i>Data: &nbsp;<span>30/04/2025</span></a>
+                              <a><i class="bi bi-clock"></i>Horário: &nbsp;<span>16:30</span></a>
+                            </div>
+                          </div>
+  
+                            <div class="coluna">
+                              <a class="status">Status</a>
+                              <a class="txt cancelado">Finalizado
+                                <i class="bi bi-check-circle" style="color: #4ed05f;"></i>
+                                <!--i class="bi bi-calendar2-check-fill" style="color: #d0804e"></i-->
+                              </a>
+                            </div>
+  
+                            <div class="coluna">
+                              <a class="action">Ações</a>
+                              <div class="btns-container">
+                                  <!--button id="abre-modal-<%= agendamento.agendamento_id %>" class="btn-deletar"
+                                    style="font-size: 10px;">Cancelar</button-->
+                                    <a><i class="bi bi-ban"></i>Sem ações disponíveis</a>
+                              </div><!--btns-container-->
+                            </div><!--coluna-->
+  
+                            <!--dialog id="modal-<%= agendamento.agendamento_id %>">
+                              <div class="content">
+                                <form action="/agendamentos/<%= agendamento.agendamento_id %>/cancelar" method="POST">
+                                  <h1>Essa ação tem um resultado irreversível. Tem certeza que deseja CANCELAR seu AGENDAMENTO?</h1>
+                                  
+                                  <div class="btn-container">
+                                  <button type="submit" class="btn-deletar" style="padding: 5px 8%; width: auto;">Sim, Cancelar!</button>
+                                </form>
+                                <button type="button" class="btn" id="btn-fecha-modal"
+                                  onclick="document.getElementById('modal-<%= agendamento.agendamento_id %>').close();"
+                                  style="width: 120px;">Cancelar</button>
+                                </div>
+                              </div>
+                            </dialog-->
+                        </li>
+                        <script>
+                          document.getElementById("abre-modal-<%= agendamento.agendamento_id %>").addEventListener("click", function () {
+                            document.getElementById("modal-<%= agendamento.agendamento_id %>").showModal();
+                          });
+                        </script>
+  
+              </div><!--container-->
+              </ul>
+  
+            </div><!--interface-->
+          </div><!--flex-->
+  
+          <dialog id="confirmationModal" class="modal-confirmacao">
+            <div class="content">
+              <h1 id="modalText" class="efeito-frase-agendamentos">Processando seu agendamento...</h1>
+  
+              <div class="spinner-container">
+                <span class="spinner"></span>
+              </div>
+              <div id="checkIcon" style="display: none; font-size: 30px; color: #4ed05f;">
+                <i class="bi bi-check-circle"></i> <!-- Ícone de check -->
+              </div>
+            </div>
+          </dialog>
+          
+          <script>
+            window.onload = () => {
+              const params = new URLSearchParams(window.location.search);
+              if (params.get('confirmado') === 'true') {
+                const modal = document.getElementById('confirmationModal');
+                const modalText = document.getElementById('modalText');
+                const spinnerContainer = modal.querySelector('.spinner-container');
+                const checkIcon = document.getElementById('checkIcon'); // Referência para o ícone de check
+                
+                // Abrir o modal
+                modal.showModal();
+          
+                // Iniciar o carregamento
+                setTimeout(() => {
+                  // Fade out do texto atual
+                  modalText.style.opacity = '0';
+          
+                  // Esperar o fade out terminar para mudar o texto
+                  setTimeout(() => {
+                    modalText.textContent = "Estamos quase lá..."; // Alterar o texto
+                    modalText.style.opacity = '1'; // Fade in do novo texto
+                  }, 500); // O tempo de espera deve ser o mesmo que a duração da transição de opacidade
+                }, 1500);
+          
+                setTimeout(() => {
+                  // Fade out do texto atual
+                  modalText.style.opacity = '0';
+          
+                  // Esperar o fade out terminar para mudar o texto
+                  setTimeout(() => {
+                    modalText.textContent = "Agendamento confirmado com sucesso!"; // Alterar o texto
+                    modalText.style.opacity = '1'; // Fade in do novo texto
+                    spinnerContainer.style.display = 'none'; // Esconder o spinner
+          
+                    // Adicionar a borda verde
+                    modal.classList.add('borda-verde');
+          
+                    // Exibir o ícone de check
+                    checkIcon.style.display = 'block'; // Mostrar o ícone
+                  }, 500); // O tempo de espera deve ser o mesmo que a duração da transição de opacidade
+                }, 5000);
+          
+                // Fechar o modal após 5 segundos
+                setTimeout(() => {
+                  modal.close();
+                }, 8000);
+          
+                // Limpar a URL para remover o parâmetro 'confirmado=true'
+                const cleanUrl = location.href.split('?')[0];
+                window.history.replaceState(null, null, cleanUrl);
+              }
+            };
+          </script>
+
+        <link rel="stylesheet" href="../../css/partials/footer/main-footer.css">
+        <link rel="stylesheet" href="../../css/partials/footer/resp-main-footer.css">
+
+        <footer class="main-footer">
+            <div class="interface">
+
+                <div class="top-footer esconder-container">
+
+                    <div class="coluna1 efeito-coluna1-footer">
+                        <div class="logo">
+                            <img src="../../css/imgs/logo/logo-png.png" alt="logo-nav">
+                        </div><!--logo-->
+
+                        <div class="text-logo">
+                            <h5>And Barbershop combina estilo e tradição em um ambiente acolhedor e sofisticado. Com
+                                cortes modernos, barbas impecáveis e atendimento personalizado, proporcionamos uma
+                                experiência única para quem valoriza qualidade e elegância.</h5>
+                        </div>
+                    </div><!--coluna1-->
+
+                    <div class="coluna2 efeito-coluna2-footer">
+                        <div class="heading-footer barbearia"><i class="bi bi-house-fill"></i>Nossa Barbearia</div>
+                        <ul>
+                            <li><i class="bi bi-scissors"></i><a>Nosso Serviços</a></li>
+                            <li><i class="bi bi-people-fill"></i><a>Nossos Profissionais</a></li>
+                            <li><i class="bi bi-cup-hot-fill"></i><a>Nosso Ambiente</a></li>
+                            <li><i class="bi bi-bookmark-check-fill"></i><a>Nosso Compromisso</a></li>
+                        </ul>
+                    </div><!--coluna2-->
+
+                    <div class="coluna3 efeito-coluna3-footer">
+                        <div class="heading-footer"><i class="bi bi-alarm-fill"></i>Horários de atendimento</div>
+                        <ul>
+                            <li><i class="bi bi-calendar2-week"></i><a>Seg. a Sexta: 09h às 21h30</a></li>
+                            <li><i class="bi bi-calendar2-week"></i><a>Sábado: 09h às 17h30</a></li>
+                        </ul>
+                    </div><!--coluna3-->
+
+                    <div class="coluna4 efeito-coluna4-footer">
+                        <div class="heading-footer contato"><i class="bi bi-telephone-outbound-fill"></i>Contato</div>
+                        <ul>
+                            <li><i class="bi bi-geo-alt-fill"></i><a style="font-size: 10px;">Av. Universitária 3125 -
+                                    São Sebastião, Criciúma</a></li>
+                            <li><i class="bi bi-envelope-fill"></i><a>andbarbershop@gmail.com</a></li>
+                            <li><i class="bi bi-whatsapp"></i><a>+55 (48) 9644 - 3861</a></li>
+                        </ul>
+                    </div><!--coluna4-->
+
+                </div><!--top-footer-->
+
+                <div class="bottom-footer esconder-container">
+
+                    <div class="copy-text efeito-copy-footer">
+                        <a>Copyright ©2024 Todos direitos reservados para: <span>Guilherme e Lucas</span></a>
+                    </div>
+
+                    <div class="redes-icones">
+                        <div class="sub-heading-footer efeito-heading-redes-footer">Nossas Redes Sociais:</div>
+
+                        <div class="icones-bottom efeito-icones-footer">
+                            <ul>
+                                <li><a class="action" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                                <li><a class="action" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                                <li><a class="action" target="_blank"
+                                        href="https://www.instagram.com/andradebarber.shop/"><i
+                                            class="bi bi-instagram"></i></a></li>
+                                <li><a class="action" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                                <li><a class="action" target="_blank"><i class="bi bi-youtube"></i></a></li>
+                            </ul>
+                        </div><!--icones bottom-->
+
+                    </div><!--rede-icones-->
+
+                </div><!--bottom-footer-->
+
+            </div><!--interface-->
+        </footer>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="../../css/partials/header/header.js"></script>
+</body>
+
+</html>

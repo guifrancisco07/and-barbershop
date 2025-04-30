@@ -27,72 +27,67 @@
 </head>
 
 <body>
-    <link rel="stylesheet" href="../css/partials/header/main-header.css">
-    <link rel="stylesheet" href="../css/partials/header/menu-mobile.css">
-    <link rel="stylesheet" href="../css/partials/header/info-conta.css">
+    <link rel="stylesheet" href="../css/partials/header/main-header-lateral.css">
+    <link rel="stylesheet" href="../css/partials/header/main-header-lateral-mobile.css">
+    <link rel="stylesheet" href="../css/partials/header/menu-info-conta.css">
+    <link rel="stylesheet" href="../css/partials/header/menu-info-conta-mobile.css">
 
-    <!--EXPORTAR A NAV-->
     <header id="header">
         <div class="interface">
-
+    
             <div class="logo">
                 <a href="../index.html">
                     <img src="../css/imgs/logo/logo-png.png" alt="logo-nav">
                 </a>
             </div><!--logo-->
-
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="#">SOBRE</a></li>
-                    <li><a href="#">PLANOS E ASSINATURAS</a></li>
-                    <li><a href="../pages/agendamento/escolha-servico.html">AGENDAR AQUI</a></li>
-                </ul>
-            </nav>
-
-            <div class="info-conta">
-                <div class="flex">
-
-                    <div class="img-conta">
-                        <img src="../css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
-                    </div>
-
-                    <div class="txt-conta">
-                        <a class="href" href="../pages/cadastro/cadastro-usuario.html">Cadastrar-se Agora</a>
-                        <hr>
-                        <a class="href" href="../pages/login-usuario.html">Realizar Login</a>
-                    </div>
-
-                </div><!--flex-->
-            </div><!--info-conta-->
-
+    
             <div class="btn-abrir-menu" id="btn-menu">
                 <i class="bi bi-list"></i>
             </div>
-
-            <div class="menu-mobile" id="menu-mobile">
+            
+            <div class="menu-conta" id="menu-mobile">
                 <div class="btn-fechar">
                     <i class="bi bi-x-lg"></i>
                 </div>
-
+    
+                <div class="menu-container">
+    
+                <div class="info-conta">
+                    <div class="flex">
+                        
+                        <div class="img-conta">
+                                <img src="../css/imgs/elementos/nav-icon-user.png" alt="Foto Usuário">
+                        </div>
+    
+                        <div class="txt-conta" style="width: 100%; font-size: 20px; margin-bottom: 5px;">
+                            <a>Seja Bem-Vindo,</a>
+                            <h1>Nome Cliente!</h1>
+                        </div>
+                    </div><!--flex-->
+                </div><!--info-conta-->
+                
+                <div class="content-menu">
                 <nav>
                     <ul>
-                        <li><a href="/index.html"><i class="bi bi-house-door-fill"></i>Home</a></li>
-                        <li><a href="#sec-sobre"><i class="bi bi-person-lines-fill"></i>Nosso Atendimento</a></li>
-                        <li><a href="#sec-servicos"><i class="bi bi-scissors"></i>Nossos Serviços</a></li>
-                        <li><a href="#sec-feed"><i class="bi bi-chat-square-text-fill"></i>Feedbacks</a></li>
-                        <li><a href="#sec-planos"><i class="bi bi-journal-bookmark-fill"></i>Planos e Assinaturas</a></li>
-                        <li><a href="/pages/agendamento/escolha-servico.html"><i class="bi bi-journal-check"></i>Agende Aqui</a></li>
+                        <li><a href="../index.html"><i class="bi bi-house-door-fill"></i>Home</a></li>
+                        <li><i class="bi bi-calendar2-week-fill"></i><a href="../pages/agendamento/ver-agendamentos.html">Meus Agendamentos</a></li>
+                    
+                        <div class="btn-logout">
+                            <a href="../index.html">
+                                <button class="btn-deletar" type="button">Sair</button>
+                            </a>
+                        </div>
                     </ul>
                 </nav>
-
-            </div><!--menu-mobile-->
-
+                </div><!--content-menu-->
+    
+            </div><!--menu-container-->
+            
+        </div><!--menu-conta-->
             <div class="overlay-menu" id="overlay-menu"></div>
-
+    
         </div><!--interface-->
     </header>
-    <!--EXPORTAR A NAV-->
 
     <main>
 
@@ -108,7 +103,7 @@
 
                         <div class="form-esquerda efeito-txt-img">
 
-                            <form class="form" action="/index.html" method="POST" enctype="multipart/form-data">
+                            <form class="form" action="../index.html" method="POST" enctype="multipart/form-data">
                                 <div class="heading">Minha Foto</div>
 
                                     <img id="preview" class="preview-img" src="../css/imgs/elementos/nav-icon-user.png"

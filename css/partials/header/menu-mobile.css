@@ -22,7 +22,7 @@
 
     .menu-mobile {
         display: block;
-        background-color: #0c0c0c;
+        background-color: #091C1D;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -43,7 +43,7 @@
     }
 
     .menu-mobile nav ul {
-        text-align: left;
+        text-align: right;
     }
 
     .menu-mobile nav ul li {
@@ -55,7 +55,7 @@
 
     .menu-mobile nav ul li a {
         background-color: transparent;
-        color: #ac6a42;
+        color: #22383a;
         font-family: Espiritu;
         text-decoration: none;
         text-transform: capitalize;
@@ -66,14 +66,14 @@
     .menu-mobile nav ul li i {
         font-size: 16px;
         margin-right: 10px;
-        color: #ac6a42;
+        color: #315053;
     }
 
     .menu-mobile nav ul li:hover {
         transition: .3s;
         transform: scale(1.02);
         cursor: no-drop;
-        background-color: #131313;
+        background-color: #071516;
     }
 
     .menu-mobile nav ul li:hover a {
@@ -94,7 +94,6 @@
 
     .menu-mobile .btn-fechar {
         padding: 20px 4%;
-        position: relative;
     }
 
     .btn-abrir-menu i {
